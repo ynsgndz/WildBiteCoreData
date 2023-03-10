@@ -1,2 +1,11 @@
 # WildBite
-a mobile game of magical monsters
+a mobile game of Werewolf and wampire.
+
+Library and technologies
+- CoreData
+
+
+
+Pages and functions
+* Login
+* Register
