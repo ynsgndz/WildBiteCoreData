@@ -1,5 +1,6 @@
 # WildBite
-a mobile game of Werewolf and wampire.
+A mobile game of Werewolf and wampire.
+
 
 Library and technologies
 - CoreData
