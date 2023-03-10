@@ -17,6 +17,9 @@
 		887DD26529B8A3FB004AEC30 /* WildBiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD26429B8A3FB004AEC30 /* WildBiteTests.swift */; };
 		887DD26F29B8A3FB004AEC30 /* WildBiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD26E29B8A3FB004AEC30 /* WildBiteUITests.swift */; };
 		887DD27129B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD27029B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift */; };
+		88AE632529BBDB5000AF6955 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE632429BBDB5000AF6955 /* RegisterViewController.swift */; };
+		88AE632829BBE20000AF6955 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AE632729BBE20000AF6955 /* Home.storyboard */; };
+		88AE632A29BBE20B00AF6955 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE632929BBE20B00AF6955 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		887DD26A29B8A3FB004AEC30 /* WildBiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildBiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		887DD26E29B8A3FB004AEC30 /* WildBiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildBiteUITests.swift; sourceTree = "<group>"; };
 		887DD27029B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildBiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88AE632429BBDB5000AF6955 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		88AE632729BBE20000AF6955 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		88AE632929BBE20B00AF6955 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +107,12 @@
 		887DD24929B8A3F8004AEC30 /* WildBite */ = {
 			isa = PBXGroup;
 			children = (
-				887DD24A29B8A3F8004AEC30 /* AppDelegate.swift */,
-				887DD24C29B8A3F8004AEC30 /* SceneDelegate.swift */,
-				887DD24E29B8A3F8004AEC30 /* ViewController.swift */,
-				887DD25029B8A3F8004AEC30 /* Main.storyboard */,
+				88AE632629BBE1E400AF6955 /* Home */,
+				88938BCC29BBBFCA001C76E1 /* Main */,
 				887DD25629B8A3FA004AEC30 /* Assets.xcassets */,
 				887DD25829B8A3FA004AEC30 /* LaunchScreen.storyboard */,
+				887DD24C29B8A3F8004AEC30 /* SceneDelegate.swift */,
+				887DD24A29B8A3F8004AEC30 /* AppDelegate.swift */,
 				887DD25B29B8A3FA004AEC30 /* Info.plist */,
 				887DD25329B8A3F8004AEC30 /* WildBite.xcdatamodeld */,
 			);
@@ -128,6 +134,41 @@
 				887DD27029B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift */,
 			);
 			path = WildBiteUITests;
+			sourceTree = "<group>";
+		};
+		88938BCC29BBBFCA001C76E1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				887DD25029B8A3F8004AEC30 /* Main.storyboard */,
+				88AE632329BBDB4100AF6955 /* Register */,
+				88AE632229BBDB3000AF6955 /* Login */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		88AE632229BBDB3000AF6955 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				887DD24E29B8A3F8004AEC30 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		88AE632329BBDB4100AF6955 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				88AE632429BBDB5000AF6955 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		88AE632629BBE1E400AF6955 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				88AE632729BBE20000AF6955 /* Home.storyboard */,
+				88AE632929BBE20B00AF6955 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +278,7 @@
 				887DD25A29B8A3FA004AEC30 /* LaunchScreen.storyboard in Resources */,
 				887DD25729B8A3FA004AEC30 /* Assets.xcassets in Resources */,
 				887DD25229B8A3F8004AEC30 /* Main.storyboard in Resources */,
+				88AE632829BBE20000AF6955 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				887DD24F29B8A3F8004AEC30 /* ViewController.swift in Sources */,
+				88AE632529BBDB5000AF6955 /* RegisterViewController.swift in Sources */,
 				887DD25529B8A3F8004AEC30 /* WildBite.xcdatamodeld in Sources */,
 				887DD24B29B8A3F8004AEC30 /* AppDelegate.swift in Sources */,
 				887DD24D29B8A3F8004AEC30 /* SceneDelegate.swift in Sources */,
+				88AE632A29BBE20B00AF6955 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
