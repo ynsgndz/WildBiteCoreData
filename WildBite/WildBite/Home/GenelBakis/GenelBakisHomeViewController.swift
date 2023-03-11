@@ -65,7 +65,7 @@ class GenelBakisHomeViewController: UIViewController {
                 
                 myUserGoldLabel.text = "Altın: \(i.userGold)"
                 myUserEnergyLabel.text = "Enerji: \(i.userEnergy)"
-                myUserCanLabel.text = "Can: \(i.userMaxHp)"
+                myUserCanLabel.text = "Can: \(i.userCurrentHp)"
                 myUserHasarLabel.text = "Hasar: \(i.userPow + i.userDef + i.userMaxHp)"
                 myUserTurLabel.text = "Tür: \(String(describing: i.userRace!.uppercased()))"
                 myUserAdiLabel.text = "Adı: \(String(describing: i.userName!))"

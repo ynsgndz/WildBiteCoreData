@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="userCurrentHp" optional="YES" attributeType="Integer 32" defaultValueString="1000" usesScalarValueType="YES"/>
         <attribute name="userDef" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="userEnergy" optional="YES" attributeType="Integer 32" defaultValueString="50" usesScalarValueType="YES"/>
         <attribute name="userExp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -11,5 +12,10 @@
         <attribute name="userPassword" optional="YES" attributeType="String"/>
         <attribute name="userPow" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="userRace" optional="YES" attributeType="String"/>
+        <attribute name="userToplamGalibiyet" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userToplamGelir" optional="YES" attributeType="Integer 32" defaultValueString="100" usesScalarValueType="YES"/>
+        <attribute name="userToplamInsanAvi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userToplamSavas" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userToplamYenilgi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
 </model>

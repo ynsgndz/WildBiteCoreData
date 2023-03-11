@@ -28,7 +28,9 @@ class ViewController: UIViewController {
          //veriGuncelle()
        
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        veriOkuma()
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -42,7 +44,7 @@ class ViewController: UIViewController {
         }
         
         for i in userInfo {
-            print(" Kisi ad : \(i.userName!) Gold :  \(i.userGold)")
+            print(" Kisi ad : \(String(describing: i.userName)) Gold :  \(i.userGold)")
         }
     }
     
@@ -63,6 +65,22 @@ class ViewController: UIViewController {
         print("Giris Butonu tiklandi")
        
         for i in userInfo {
+            if(i.userName == nil){
+                context.delete(i)
+                appDelegate.saveContext()
+            }
+            if(i.userName == "admin"){
+                i.userGold = 1000000
+                i.userPow = 1000
+                i.userDef = 1000
+                i.userEnergy = 1000
+                i.userLevel = 99
+                i.userMaxHp = 1000000
+                i.userCurrentHp = 1000000
+                
+                appDelegate.saveContext()
+            }
+            
             if(myUserNameTextField.text == i.userName && myUserPasswordTextField.text == i.userPassword){
                 self.performSegue(withIdentifier: "loginToHome", sender: nil)
                 print("Kullanici bilgileri dogru")
@@ -77,3 +95,4 @@ class ViewController: UIViewController {
     }
 }
 
+ 

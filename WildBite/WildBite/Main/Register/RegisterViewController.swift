@@ -69,6 +69,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func myKayitOlButton(_ sender: Any) {
+        UserDefaults.standard.set(myUserNameTextField.text, forKey: "GirisYapanKullanici")
         veriKaydi()
         
     }

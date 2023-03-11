@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */; };
+		884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */; };
 		8866932F29BC871800E0BBEA /* GenelBakisHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */; };
 		887DD24B29B8A3F8004AEC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD24A29B8A3F8004AEC30 /* AppDelegate.swift */; };
 		887DD24D29B8A3F8004AEC30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD24C29B8A3F8004AEC30 /* SceneDelegate.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvSayfasiViewController.swift; sourceTree = "<group>"; };
+		884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSayfasiViewController.swift; sourceTree = "<group>"; };
 		8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenelBakisHomeViewController.swift; sourceTree = "<group>"; };
 		887DD24729B8A3F8004AEC30 /* WildBite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildBite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887DD24A29B8A3F8004AEC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		884F094829BCB0D600203DA9 /* AvSayfasi */ = {
+			isa = PBXGroup;
+			children = (
+				884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */,
+			);
+			path = AvSayfasi;
+			sourceTree = "<group>";
+		};
+		884F094B29BCB13800203DA9 /* ProfilSayfasi */ = {
+			isa = PBXGroup;
+			children = (
+				884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */,
+			);
+			path = ProfilSayfasi;
+			sourceTree = "<group>";
+		};
 		8866932D29BC86F900E0BBEA /* GenelBakis */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +193,8 @@
 		88AE632629BBE1E400AF6955 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				884F094B29BCB13800203DA9 /* ProfilSayfasi */,
+				884F094829BCB0D600203DA9 /* AvSayfasi */,
 				8866932D29BC86F900E0BBEA /* GenelBakis */,
 				88AE632729BBE20000AF6955 /* Home.storyboard */,
 			);
@@ -314,7 +336,9 @@
 				887DD24F29B8A3F8004AEC30 /* ViewController.swift in Sources */,
 				8866932F29BC871800E0BBEA /* GenelBakisHomeViewController.swift in Sources */,
 				88AE632529BBDB5000AF6955 /* RegisterViewController.swift in Sources */,
+				884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */,
 				887DD25529B8A3F8004AEC30 /* WildBite.xcdatamodeld in Sources */,
+				884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */,
 				887DD24B29B8A3F8004AEC30 /* AppDelegate.swift in Sources */,
 				887DD24D29B8A3F8004AEC30 /* SceneDelegate.swift in Sources */,
 			);
