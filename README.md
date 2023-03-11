@@ -16,9 +16,9 @@ Sayfalar ve özellikleri
   * Profile sayfasi
   * Av sayfasi
        *   -insan avi
-                *       - Mahallede avlanma
-                *       - Köyde avlanma
-                *       - Kasabada avlanma
-                *       - Şehirde avlanma
+              *       - Mahallede avlanma
+              *       - Köyde avlanma
+              *       - Kasabada avlanma
+              *       - Şehirde avlanma
         *   - Rakip avi   
 * Genel Bakis sayfasi
