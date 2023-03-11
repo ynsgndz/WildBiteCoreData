@@ -25,7 +25,7 @@ class ViewController: UIViewController {
          veriOkuma()
         
         // veriSil()
-        // veriGuncelle()
+         //veriGuncelle()
        
     }
     
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         }
         
         for i in userInfo {
-            print(" Kisi ad : \(i.userName!)")
+            print(" Kisi ad : \(i.userName!) Gold :  \(i.userGold)")
         }
     }
     
@@ -53,9 +53,9 @@ class ViewController: UIViewController {
     }
     
     func veriGuncelle(){
-        let user = userInfo[0]
-        user.userName = "Zeynep İrem ADIGÜZEL"
-     
+        let user = userInfo[2]
+        user.userGold = 100
+        
         appDelegate.saveContext()
     }
 
@@ -66,6 +66,7 @@ class ViewController: UIViewController {
             if(myUserNameTextField.text == i.userName && myUserPasswordTextField.text == i.userPassword){
                 self.performSegue(withIdentifier: "loginToHome", sender: nil)
                 print("Kullanici bilgileri dogru")
+            UserDefaults.standard.set(myUserNameTextField.text, forKey: "GirisYapanKullanici")
             }else{
                 print("Kullanici bilgileri yanlis")
              

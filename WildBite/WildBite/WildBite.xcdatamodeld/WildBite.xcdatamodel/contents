@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Login" representedClassName="Login" syncable="YES" codeGenerationType="class">
+        <attribute name="loginUserName" optional="YES" attributeType="String" defaultValueString="none"/>
+    </entity>
     <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
         <attribute name="userDef" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userEnergy" optional="YES" attributeType="Integer 32" defaultValueString="50" usesScalarValueType="YES"/>
         <attribute name="userExp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userGold" optional="YES" attributeType="Integer 32" defaultValueString="100" usesScalarValueType="YES"/>
         <attribute name="userLevel" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userMaxHp" optional="YES" attributeType="Integer 32" defaultValueString="1000" usesScalarValueType="YES"/>
         <attribute name="userName" optional="YES" attributeType="String"/>
         <attribute name="userPassword" optional="YES" attributeType="String"/>
         <attribute name="userPow" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>

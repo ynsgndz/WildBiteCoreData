@@ -20,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WildBite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng5-5V-4eA">
                                 <rect key="frame" x="64" y="108" width="107" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSg-KD-cL4">
@@ -142,9 +142,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bim-tp-3eC">
-                                <rect key="frame" x="110" y="560" width="256" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bim-tp-3eC">
+                                <rect key="frame" x="79" y="379" width="256" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="GeR-x3-04W"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kayıt ol"/>
                                 <connections>
@@ -161,9 +163,11 @@
                             <constraint firstItem="zEz-pc-t4L" firstAttribute="centerX" secondItem="fUj-2W-aHz" secondAttribute="centerX" id="T0r-Xw-HES"/>
                             <constraint firstItem="1Fe-yE-T66" firstAttribute="top" secondItem="zEz-pc-t4L" secondAttribute="bottom" constant="64" id="WGC-kN-epK"/>
                             <constraint firstItem="bwt-Qd-Fa8" firstAttribute="trailing" secondItem="NTU-Ll-AwC" secondAttribute="trailing" id="cOM-5u-mAQ"/>
+                            <constraint firstItem="bim-tp-3eC" firstAttribute="top" secondItem="798-LN-NLV" secondAttribute="bottom" constant="32" id="fSj-zH-CqQ"/>
                             <constraint firstItem="798-LN-NLV" firstAttribute="top" secondItem="1Fe-yE-T66" secondAttribute="bottom" constant="32" id="iBo-0B-s4Q"/>
                             <constraint firstItem="zEz-pc-t4L" firstAttribute="top" secondItem="bwt-Qd-Fa8" secondAttribute="bottom" constant="64" id="kEE-i2-gqh"/>
                             <constraint firstItem="798-LN-NLV" firstAttribute="centerX" secondItem="fUj-2W-aHz" secondAttribute="centerX" id="q4y-0N-2IM"/>
+                            <constraint firstItem="bim-tp-3eC" firstAttribute="centerX" secondItem="fUj-2W-aHz" secondAttribute="centerX" id="tQs-Fm-mal"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mhJ-45-cvC"/>
@@ -180,14 +184,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KuS-RX-ulK"/>
+        <segue reference="xx9-h9-6vQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
