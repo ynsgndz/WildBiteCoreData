@@ -175,16 +175,16 @@
                         <outlet property="mySegmentedControl" destination="zEz-pc-t4L" id="lJd-aD-u3f"/>
                         <outlet property="myUserNameTextField" destination="1Fe-yE-T66" id="QYf-b8-JDt"/>
                         <outlet property="myUserPasswordTextField" destination="798-LN-NLV" id="XZR-NW-Vmd"/>
-                        <segue destination="eR7-wP-WXM" kind="presentation" identifier="registerToHome" modalPresentationStyle="fullScreen" id="KuS-RX-ulK"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="registerToHome" modalPresentationStyle="fullScreen" id="JhO-n3-wGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOj-ek-dxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647.826086956522" y="-20.089285714285712"/>
+            <point key="canvasLocation" x="2164" y="-2"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xx9-h9-6vQ"/>
+        <segue reference="JhO-n3-wGc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

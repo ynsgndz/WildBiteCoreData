@@ -18,18 +18,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av Sayfası" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFN-uI-UK8">
-                                <rect key="frame" x="157.66666666666666" y="415.66666666666669" width="77.666666666666657" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rakip Avi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-Qj-E6G">
+                                <rect key="frame" x="16" y="75" width="133.66666666666666" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gH-Oz-ObF">
+                                <rect key="frame" x="64" y="147.66666666666666" width="265" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rakip Ara"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İnsan Avı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-NH-gn5">
+                                <rect key="frame" x="16" y="214.66666666666666" width="130.66666666666666" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mID-G3-czb">
+                                <rect key="frame" x="64" y="287.33333333333331" width="265" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mahallede Ava Çık (5 enerji)"/>
+                                <connections>
+                                    <segue destination="he9-Nr-IB5" kind="presentation" modalPresentationStyle="fullScreen" id="V42-El-fud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK7-WF-dIS">
+                                <rect key="frame" x="64" y="354.33333333333331" width="265" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Köyde Ava Çık (10 enerji)"/>
+                                <connections>
+                                    <segue destination="QDC-dG-7FM" kind="presentation" modalPresentationStyle="fullScreen" id="nZ7-2c-DUA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFv-Jp-au0">
+                                <rect key="frame" x="64" y="421.33333333333331" width="265" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kasabada Ava Çık (15 enerji)"/>
+                                <connections>
+                                    <segue destination="JOQ-CB-VrP" kind="presentation" modalPresentationStyle="fullScreen" id="fC2-hH-CFp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svD-ZB-R7L">
+                                <rect key="frame" x="64" y="488.33333333333331" width="265" height="34.999999999999943"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Şehirde ava çık (20 enerji)"/>
+                                <connections>
+                                    <segue destination="8AD-gl-yqy" kind="presentation" modalPresentationStyle="fullScreen" id="SZs-u0-Pyu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VFN-uI-UK8" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="cO0-IY-KiE"/>
-                            <constraint firstItem="VFN-uI-UK8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qFj-jg-Di2"/>
+                            <constraint firstItem="svD-ZB-R7L" firstAttribute="top" secondItem="tFv-Jp-au0" secondAttribute="bottom" constant="32" id="4zr-dB-02d"/>
+                            <constraint firstItem="mID-G3-czb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="9Pi-vW-r5K"/>
+                            <constraint firstItem="TUE-NH-gn5" firstAttribute="top" secondItem="9gH-Oz-ObF" secondAttribute="bottom" constant="32" id="Dgv-c1-fn4"/>
+                            <constraint firstItem="eK7-WF-dIS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="HkI-LJ-VrZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9gH-Oz-ObF" secondAttribute="trailing" constant="64" id="Iun-Hu-QTA"/>
+                            <constraint firstItem="TUE-NH-gn5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Raf-Fh-6Tx"/>
+                            <constraint firstItem="svD-ZB-R7L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="TS6-0y-dVy"/>
+                            <constraint firstItem="tFv-Jp-au0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="ULg-Tp-O66"/>
+                            <constraint firstItem="eK7-WF-dIS" firstAttribute="top" secondItem="mID-G3-czb" secondAttribute="bottom" constant="32" id="bg3-oI-QoG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="svD-ZB-R7L" secondAttribute="trailing" constant="64" id="c3V-Ch-zer"/>
+                            <constraint firstItem="gVi-Qj-E6G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="diF-tt-Ics"/>
+                            <constraint firstItem="mID-G3-czb" firstAttribute="top" secondItem="TUE-NH-gn5" secondAttribute="bottom" constant="32" id="g82-58-cpB"/>
+                            <constraint firstItem="9gH-Oz-ObF" firstAttribute="top" secondItem="gVi-Qj-E6G" secondAttribute="bottom" constant="32" id="gVa-Il-4DB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mID-G3-czb" secondAttribute="trailing" constant="64" id="hYW-4h-Gep"/>
+                            <constraint firstItem="9gH-Oz-ObF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="hbA-r4-R9O"/>
+                            <constraint firstItem="gVi-Qj-E6G" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="ql0-CK-lS5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eK7-WF-dIS" secondAttribute="trailing" constant="64" id="uee-4D-Aad"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tFv-Jp-au0" secondAttribute="trailing" constant="64" id="v1c-LQ-zwW"/>
+                            <constraint firstItem="tFv-Jp-au0" firstAttribute="top" secondItem="eK7-WF-dIS" secondAttribute="bottom" constant="32" id="xXK-HB-q7a"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Av" image="figure.hunting" catalog="system" id="TpD-vG-fNM"/>
@@ -381,6 +441,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFz-mF-fo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1613" y="-65"/>
+        </scene>
+        <!--MahalleAv-->
+        <scene sceneID="gYv-7e-dIr">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MahalleAv" storyboardName="MahalleAv" referencedIdentifier="MahalleAv" id="he9-Nr-IB5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t45-zs-dok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="-66"/>
+        </scene>
+        <!--KoyAv-->
+        <scene sceneID="FKp-iI-ADg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="KoyAv" storyboardName="KoyAv" referencedIdentifier="KoyAv" id="QDC-dG-7FM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5p-Bh-rFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="-16"/>
+        </scene>
+        <!--KasabaAv-->
+        <scene sceneID="ocr-SU-CpC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="KasabaAv" storyboardName="KasabaAv" referencedIdentifier="KasabaAv" id="JOQ-CB-VrP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ze2-cp-NQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="29"/>
+        </scene>
+        <!--SehirAv-->
+        <scene sceneID="IBK-nm-HFR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SehirAv" storyboardName="SehirAv" referencedIdentifier="SehirAv" id="8AD-gl-yqy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O25-JH-huV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="70"/>
         </scene>
     </scenes>
     <resources>

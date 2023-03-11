@@ -6,24 +6,50 @@
 //
 
 import UIKit
+import CoreData
+
+let appAvDelegate = UIApplication.shared.delegate as! AppDelegate
+
+
+
+
 
 class AvSayfasiViewController: UIViewController {
-
+    var loginUserName = UserDefaults.standard.string(forKey: "GirisYapanKullanici")
+    let myContext = appAvDelegate.persistentContainer.viewContext
+    var userInfo = [Users]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        veriOkuma()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear: sayfa goruntulenicek")
+       
+         loginUserName = UserDefaults.standard.string(forKey: "GirisYapanKullanici")
+      
+            veriOkuma()
+        
     }
-    */
+    
+    func veriOkuma(){
+        do {
+            userInfo = try myContext.fetch(Users.fetchRequest())
+            for i in userInfo {
+                if(i.userName == loginUserName){
+                    
+                   
+                }
+            }
+            print("veriokuma")
+        }catch{
+            print("Kişileri okuyamadı !")
+        }
+        
+        
+    }
+    
 
 }

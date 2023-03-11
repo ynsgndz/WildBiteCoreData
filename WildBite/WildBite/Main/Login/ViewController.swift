@@ -12,7 +12,7 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class ViewController: UIViewController {
 
-    let context = appDelegate.persistentContainer.viewContext
+    let myContext = appDelegate.persistentContainer.viewContext
     var userInfo = [Users]()
     
     @IBOutlet weak var myUserNameTextField: UITextField!
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     func veriOkuma(){
         do {
-            userInfo = try context.fetch(Users.fetchRequest())
+            userInfo = try myContext.fetch(Users.fetchRequest())
         }catch{
             print("Kişileri okuyamadı !")
         }
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     
     func veriSil(){
         let user = userInfo[0]
-        context.delete(user)
+        myContext.delete(user)
         appDelegate.saveContext()
     }
     
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
        
         for i in userInfo {
             if(i.userName == nil){
-                context.delete(i)
+                myContext.delete(i)
                 appDelegate.saveContext()
             }
             if(i.userName == "admin"){
