@@ -12,7 +12,7 @@
         <!--MahalleAv-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="MahalleAv" title="MahalleAv" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MahalleAv" title="MahalleAv" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MahalleAvViewController" customModule="WildBite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="MahalleAv" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,12 +71,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4Y-mr-IJR">
+                                <rect key="frame" x="32" y="389" width="329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Saldır"/>
+                                <connections>
+                                    <action selector="mySaldirButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PMA-l1-i2w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av yapilmadi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8N-pO-YvC">
+                                <rect key="frame" x="32" y="440" width="329" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="e8N-pO-YvC" firstAttribute="top" secondItem="P4Y-mr-IJR" secondAttribute="bottom" constant="16" id="D9l-QU-LCq"/>
                             <constraint firstItem="qpz-CM-u2G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="EVp-yR-F6h"/>
                             <constraint firstItem="SeL-li-MeC" firstAttribute="top" secondItem="uKc-iI-IJP" secondAttribute="bottom" constant="16" id="KY2-ZM-UAC"/>
+                            <constraint firstItem="P4Y-mr-IJR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="LIM-or-nmo"/>
+                            <constraint firstItem="e8N-pO-YvC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="LiB-yc-58n"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P4Y-mr-IJR" secondAttribute="trailing" constant="32" id="O9y-3Q-V53"/>
                             <constraint firstItem="uKc-iI-IJP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ONC-Pf-zWi"/>
                             <constraint firstItem="Ah1-hW-CNi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="REF-nO-IKz"/>
                             <constraint firstItem="SeL-li-MeC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RHc-vu-apP"/>
@@ -85,15 +103,21 @@
                             <constraint firstItem="Ah1-hW-CNi" firstAttribute="top" secondItem="Mkv-bl-XF5" secondAttribute="bottom" constant="16" id="Van-Fy-Agn"/>
                             <constraint firstItem="qpz-CM-u2G" firstAttribute="top" secondItem="Ah1-hW-CNi" secondAttribute="bottom" constant="8" id="Vnj-da-osa"/>
                             <constraint firstItem="NKC-6m-u3b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="ZZL-Fu-QQB"/>
+                            <constraint firstItem="P4Y-mr-IJR" firstAttribute="top" secondItem="qpz-CM-u2G" secondAttribute="bottom" constant="32" id="bIT-X3-gRw"/>
                             <constraint firstItem="Z2c-AW-Psk" firstAttribute="top" secondItem="wvr-mt-pdc" secondAttribute="bottom" constant="8" id="bXi-p9-XJv"/>
                             <constraint firstItem="Mkv-bl-XF5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="c53-sM-54z"/>
                             <constraint firstItem="uKc-iI-IJP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="dbo-rM-3NV"/>
                             <constraint firstItem="Z2c-AW-Psk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="i1G-Bg-JeX"/>
                             <constraint firstItem="wvr-mt-pdc" firstAttribute="top" secondItem="NKC-6m-u3b" secondAttribute="bottom" constant="16" id="qZb-hc-YZx"/>
                             <constraint firstItem="Mkv-bl-XF5" firstAttribute="top" secondItem="Z2c-AW-Psk" secondAttribute="bottom" constant="32" id="vQE-R6-1oO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="e8N-pO-YvC" secondAttribute="trailing" constant="32" id="x4Z-HE-DkO"/>
                             <constraint firstItem="uKc-iI-IJP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yiY-yl-Z9q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myAvYapildimiLabel" destination="e8N-pO-YvC" id="LNs-VB-tPE"/>
+                        <outlet property="myUserInfoLabel" destination="SeL-li-MeC" id="YRo-Tg-W4Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +135,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

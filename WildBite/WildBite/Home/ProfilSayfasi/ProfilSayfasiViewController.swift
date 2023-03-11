@@ -82,7 +82,10 @@ class ProfilSayfasiViewController: UIViewController {
                 myToplamYenilgiLabel.text = "Yenilgi : \(i.userToplamYenilgi)"
                 myToplamInsanAviLabel.text = "İnsan Avı : \(i.userToplamInsanAvi)"
                 myToplamCanLabel.text = "Can : \(i.userCurrentHp) / \(i.userMaxHp)"
-                myTecrubeLabel.text = "Tecrübe : \(i.userExp) / \(i.userLevel * 100)"
+                //tecrube
+                var tecrubeMax = i.userLevel * 100
+                var tecrubeCur = i.userExp % (tecrubeMax)
+                myTecrubeLabel.text = "Tecrübe : \(tecrubeCur) / \(tecrubeMax) "
                 myToplamGucLabel.text = "Güç : \(i.userPow)"
                 myToplamSavunmaLabel.text = "Savunma : \(i.userDef)"
              
@@ -119,13 +122,19 @@ class ProfilSayfasiViewController: UIViewController {
          
         for i in userInfo {
             if(i.userName == loginUserName){
-                i.userPow += 1
-                i.userGold -= Int32(userSaldiriOrani)
-                myAppDelegate.saveContext()
-                
+                if(i.userGold < userSaldiriOrani){
+                    myGucArttirButtonLabel.isEnabled = false
+                }else{
+                    i.userPow += 1
+                    i.userGold -= Int32(userSaldiriOrani)
+                    i.userLevel = ( i.userExp / 100) + 1
+                    myAppDelegate.saveContext()
+                    veriOkuma()
+                }
+               
             }
             
-           
+          
         }
         
         
@@ -137,8 +146,9 @@ class ProfilSayfasiViewController: UIViewController {
             if(i.userName == loginUserName){
                 i.userDef += 1
                 i.userGold -= Int32(userSaldiriOrani)
+                i.userLevel = ( i.userExp / 100) + 1
                 myAppDelegate.saveContext()
-               
+               veriOkuma()
             }
            
         }

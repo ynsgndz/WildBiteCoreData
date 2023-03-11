@@ -11,7 +11,7 @@ import CoreData
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class ViewController: UIViewController {
-
+    
     let myContext = appDelegate.persistentContainer.viewContext
     var userInfo = [Users]()
     
@@ -21,12 +21,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-         veriOkuma()
+        
+        //  veriOkuma()
         
         // veriSil()
-         //veriGuncelle()
-       
+        //veriGuncelle()
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         veriOkuma()
@@ -44,7 +44,8 @@ class ViewController: UIViewController {
         }
         
         for i in userInfo {
-            print(" Kisi ad : \(String(describing: i.userName)) Gold :  \(i.userGold)")
+            print("Username : \(i.userName!) Pass: \(String(describing: i.userPassword!))  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userCurrentHp) /\(i.userMaxHp)  Enerji : \(i.userEnergy)/\(i.userEnergyMax)")
+            
         }
     }
     
@@ -60,39 +61,54 @@ class ViewController: UIViewController {
         
         appDelegate.saveContext()
     }
-
+    
     @IBAction func myGirisButton(_ sender: Any) {
         print("Giris Butonu tiklandi")
-       
+        
         for i in userInfo {
             if(i.userName == nil){
                 myContext.delete(i)
                 appDelegate.saveContext()
             }
-            if(i.userName == "admin"){
-                i.userGold = 1000000
-                i.userPow = 1000
-                i.userDef = 1000
-                i.userEnergy = 1000
-                i.userLevel = 99
-                i.userMaxHp = 1000000
-                i.userCurrentHp = 1000000
-                
-                appDelegate.saveContext()
-            }
             
-            if(myUserNameTextField.text == i.userName && myUserPasswordTextField.text == i.userPassword){
-                self.performSegue(withIdentifier: "loginToHome", sender: nil)
-                print("Kullanici bilgileri dogru")
-            UserDefaults.standard.set(myUserNameTextField.text, forKey: "GirisYapanKullanici")
-            }else{
-                print("Kullanici bilgileri yanlis")
-             
-                myUserNameTextField.placeholder = "tekrar deneyin "
-                myUserPasswordTextField.placeholder = "tekrar deneyin "
+            if(myUserNameTextField.text == "delyap"){
+                if(i.userName != "admin"){
+                    myContext.delete(i)
+                    appDelegate.saveContext()
+                }
+                
+            }
+                if(myUserNameTextField.text == "fullyap"){
+                    if(i.userName != "admin"){
+                        i.userCurrentHp += 300
+                        i.userEnergy += 50
+                        appDelegate.saveContext()
+                    }else{
+                        i.userGold = 1000000
+                        i.userPow = 10
+                        i.userDef = 10
+                        i.userEnergy = 10000
+                        i.userLevel = 1
+                        i.userMaxHp = 1000
+                        i.userCurrentHp = 1000000
+                        i.userExp = 1000
+                        
+                        appDelegate.saveContext()
+                    }
+                }
+                
+                if(myUserNameTextField.text == i.userName && myUserPasswordTextField.text == i.userPassword){
+                    self.performSegue(withIdentifier: "loginToHome", sender: nil)
+                    print("Kullanici bilgileri dogru")
+                    UserDefaults.standard.set(myUserNameTextField.text, forKey: "GirisYapanKullanici")
+                }else{
+                    print("Kullanici bilgileri yanlis")
+                    
+                    myUserNameTextField.placeholder = "tekrar deneyin "
+                    myUserPasswordTextField.placeholder = "tekrar deneyin "
+                }
             }
         }
     }
-}
+    
 
- 
