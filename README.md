@@ -15,10 +15,13 @@ Sayfalar ve özellikleri
 - Home
   * Profile sayfasi
   * Av sayfasi
-       *   -insan avi
+    * insan avi
+       
               *       - Mahallede avlanma
               *       - Köyde avlanma
               *       - Kasabada avlanma
               *       - Şehirde avlanma
-        *   - Rakip avi   
+          
+    * Rakip avi 
+        
 * Genel Bakis sayfasi
