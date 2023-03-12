@@ -75,7 +75,7 @@ class ProfilSayfasiViewController: UIViewController {
         for i in userInfo {
             if(i.userName == loginUserName){
                 print("Username : \(i.userName!)  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userMaxHp) Enerji : \(i.userEnergy)")
-                userSaldiriOrani = Int((i.userPow * 30) + (i.userDef * 15 ) + (i.userLevel * 1000))
+                userSaldiriOrani = Int((i.userPow * 30) + (i.userDef * 15 ) + (i.userLevel * 100))
                 myToplamGelirLabel.text = "Toplam Gelir : \(i.userToplamGelir)"
                 userToplamSavasLabel.text = "Savaş : \(i.userToplamSavas)"
                 userToplamGalibiyetLabel.text = "Galibiyet : \(i.userToplamGalibiyet)"

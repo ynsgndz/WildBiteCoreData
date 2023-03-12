@@ -122,21 +122,30 @@ class RakipAviOzetiViewController: UIViewController {
                 print("Debug: savunanUserName \(savunanUserName!) \n")
                 
                 let savasSonucu = saldiranHasarOrani! - savunanHasarOrani!
-              
+                
                 print("Debug: saldiranHasarOrani \(String(describing: saldiranHasarOrani!))")
                 print("Debug: savunanHasarOrani \(String(describing: savunanHasarOrani!))")
                 print("Debug: savasSonucu \(savasSonucu) \n")
                 mySaldiranProfilResmi.image = UIImage(named: i.userProfilResmi!)
                 if(savasSonucu >= 0){
+                   
                     kazananLabel.text = "Kazanan: \(saldiranUserName!)"
                     kazananLabel.textColor = .systemGreen
-                    let alinanHasar = ((savunanGuc! + savunanDefans!)*3)
+                    var alinanHasar = ((savunanGuc! + savunanDefans!)*3)
+                    
                     let odulAltin = ((savunanAltin!*30)/100)
                     print("Debug: kalanCan \(alinanHasar) \n")
                     print("Debug: odulAltin \(odulAltin) \n")
                   
                     i.userEnergy += 15
-                    i.userCurrentHp -= alinanHasar
+                    if(alinanHasar > i.userCurrentHp){
+                        alinanHasar =  i.userCurrentHp
+                        i.userCurrentHp = 0
+                        
+                    }else{
+                        i.userCurrentHp -= alinanHasar
+                    }
+                    
                     i.userGold += odulAltin
                     i.userExp += 1
                     i.userToplamSavas += 1
