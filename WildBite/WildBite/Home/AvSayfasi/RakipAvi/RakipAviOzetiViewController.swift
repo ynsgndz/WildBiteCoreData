@@ -23,9 +23,11 @@ class RakipAviOzetiViewController: UIViewController {
     
     @IBOutlet weak var saldiranGucLabel: UILabel!
     
+    @IBOutlet weak var mySaldiranProfilResmi: UIImageView!
     
     @IBOutlet weak var saldiranSavunmaLabel: UILabel!
     
+    @IBOutlet weak var mySavunanProfilResmi: UIImageView!
     
     @IBOutlet weak var savunanUserNameLabel: UILabel!
     
@@ -87,8 +89,8 @@ class RakipAviOzetiViewController: UIViewController {
         saldiranUserNameLabel.text = "Saldıran: \(saldiranUserName!)"
         savunanUserNameLabel.text = "Savunan: \(savunanUserName!)"
         
-        saldiranHasarOraniLabel.text  = "Verilen Hasar: \(saldiranHasarOrani!)"
-        savunanHasarOraniLabel.text = "Alınan Hasar: \(savunanHasarOrani!)"
+        saldiranHasarOraniLabel.text  = "Saldırı Hasarı: \(saldiranHasarOrani!)"
+        savunanHasarOraniLabel.text = "Saldırı Hasarı: \(savunanHasarOrani!)"
         
         saldiranGucLabel.text = "Güç: \(saldiranGuc!)"
         savunanGucLabel.text = "Güç: \(savunanGuc!)"
@@ -111,7 +113,9 @@ class RakipAviOzetiViewController: UIViewController {
     func saldiriSonucu(){
         print("Debug: saldiriSonucu run \n")
         for i in userInfo{
-           
+            if(i.userName! == savunanUserName!){
+                mySavunanProfilResmi.image = UIImage(named: i.userProfilResmi!)
+            }
             if(i.userName! == saldiranUserName!){
                 print("Debug: i.userName \(i.userName!)")
                 print("Debug: saldiranUserName \(saldiranUserName!)")
@@ -122,11 +126,12 @@ class RakipAviOzetiViewController: UIViewController {
                 print("Debug: saldiranHasarOrani \(String(describing: saldiranHasarOrani!))")
                 print("Debug: savunanHasarOrani \(String(describing: savunanHasarOrani!))")
                 print("Debug: savasSonucu \(savasSonucu) \n")
+                mySaldiranProfilResmi.image = UIImage(named: i.userProfilResmi!)
                 if(savasSonucu >= 0){
                     kazananLabel.text = "Kazanan: \(saldiranUserName!)"
                     kazananLabel.textColor = .systemGreen
                     let alinanHasar = ((savunanGuc! + savunanDefans!)*3)
-                    let odulAltin = savunanAltin! - ((savunanAltin!*30)/100)
+                    let odulAltin = ((savunanAltin!*30)/100)
                     print("Debug: kalanCan \(alinanHasar) \n")
                     print("Debug: odulAltin \(odulAltin) \n")
                   
@@ -144,7 +149,7 @@ class RakipAviOzetiViewController: UIViewController {
                     kazananLabel.text = "Kazanan: \(savunanUserName!)"
                     kazananLabel.textColor = .systemRed
                     let alinanHasar = ((savunanGuc! + savunanDefans!)*3)
-                    let kalanAltin = saldiranAltin! - ((saldiranAltin!*30)/100)
+                    let kalanAltin = ((saldiranAltin!*30)/100)
                     print("Debug: alinanHasar \(alinanHasar) \n")
                     print("Debug: kalanAltin \(kalanAltin) \n")
                   

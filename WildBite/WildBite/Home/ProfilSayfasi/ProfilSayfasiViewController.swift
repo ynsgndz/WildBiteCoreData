@@ -75,7 +75,7 @@ class ProfilSayfasiViewController: UIViewController {
         for i in userInfo {
             if(i.userName == loginUserName){
                 print("Username : \(i.userName!)  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userMaxHp) Enerji : \(i.userEnergy)")
-                userSaldiriOrani = Int(i.userPow + i.userDef + 100 )
+                userSaldiriOrani = Int((i.userPow * 30) + (i.userDef * 15 ) + (i.userLevel * 1000))
                 myToplamGelirLabel.text = "Toplam Gelir : \(i.userToplamGelir)"
                 userToplamSavasLabel.text = "Savaş : \(i.userToplamSavas)"
                 userToplamGalibiyetLabel.text = "Galibiyet : \(i.userToplamGalibiyet)"
@@ -83,8 +83,8 @@ class ProfilSayfasiViewController: UIViewController {
                 myToplamInsanAviLabel.text = "İnsan Avı : \(i.userToplamInsanAvi)"
                 myToplamCanLabel.text = "Can : \(i.userCurrentHp) / \(i.userMaxHp)"
                 //tecrube
-                var tecrubeMax = i.userLevel * 100
-                var tecrubeCur = i.userExp % (tecrubeMax)
+                let tecrubeMax = i.userLevel * 100
+                let tecrubeCur = i.userExp % (tecrubeMax)
                 myTecrubeLabel.text = "Tecrübe : \(tecrubeCur) / \(tecrubeMax) "
                 myToplamGucLabel.text = "Güç : \(i.userPow)"
                 myToplamSavunmaLabel.text = "Savunma : \(i.userDef)"
@@ -125,6 +125,7 @@ class ProfilSayfasiViewController: UIViewController {
                 if(i.userGold < userSaldiriOrani){
                     myGucArttirButtonLabel.isEnabled = false
                 }else{
+                    myGucArttirButtonLabel.isEnabled = true
                     i.userPow += 1
                     i.userGold -= Int32(userSaldiriOrani)
                     i.userLevel = ( i.userExp / 100) + 1
@@ -142,13 +143,19 @@ class ProfilSayfasiViewController: UIViewController {
          
     }
     @IBAction func myDefansArttirButton(_ sender: Any) {
+        
         for i in userInfo {
             if(i.userName == loginUserName){
-                i.userDef += 1
-                i.userGold -= Int32(userSaldiriOrani)
-                i.userLevel = ( i.userExp / 100) + 1
-                myAppDelegate.saveContext()
-               veriOkuma()
+                if(i.userGold < userSaldiriOrani){
+                    mySavunmaArttirButtonLabel.isEnabled = false
+                }else{
+                    mySavunmaArttirButtonLabel.isEnabled = true
+                    i.userDef += 1
+                    i.userGold -= Int32(userSaldiriOrani)
+                    i.userLevel = ( i.userExp / 100) + 1
+                    myAppDelegate.saveContext()
+                    veriOkuma()
+                }
             }
            
         }

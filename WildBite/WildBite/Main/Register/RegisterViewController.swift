@@ -42,8 +42,17 @@ class RegisterViewController: UIViewController {
         
         user.userPassword = myUserPasswordTextField.text
         user.userName = myUserNameTextField.text
-      
+        var randomNumber = Int.random(in: 1...6)
         
+        if(userRace == "vampir"){
+            user.userProfilResmi = "vampir\(randomNumber)"
+            print("resim vampir\(randomNumber).png")
+        }else if(userRace == "kurtadam"){
+            user.userProfilResmi = "kurtadam\(randomNumber)"
+            print("resim kurtadam\(randomNumber).png")
+        }else{
+            print("resim yok \(randomNumber).png")
+        }
             myAppDelegate.saveContext()
             
             print("Kayit Basarili ")

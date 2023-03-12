@@ -282,6 +282,8 @@
                     <connections>
                         <outlet property="kazananLabel" destination="8h1-wQ-w3D" id="sxe-BX-bUQ"/>
                         <outlet property="kazananOdulLabel" destination="YHo-27-4Ja" id="rvY-fo-xU3"/>
+                        <outlet property="mySaldiranProfilResmi" destination="6wS-Ea-jtN" id="aLJ-NP-Myj"/>
+                        <outlet property="mySavunanProfilResmi" destination="u0E-cy-Imr" id="Zkt-2H-HTU"/>
                         <outlet property="saldiranGucLabel" destination="fqv-mT-vTq" id="CGM-Cd-vqL"/>
                         <outlet property="saldiranHasarOraniLabel" destination="hXh-jY-6a8" id="ROe-mj-oyn"/>
                         <outlet property="saldiranSavunmaLabel" destination="eij-3z-0IH" id="YJE-ap-Tlg"/>

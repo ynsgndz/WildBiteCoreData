@@ -311,9 +311,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="z1Y-fi-BeK">
-                                <rect key="frame" x="16" y="93" width="128" height="124.66666666666666"/>
-                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z1Y-fi-BeK">
+                                <rect key="frame" x="16" y="91" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="81J-6H-2LY"/>
                                     <constraint firstAttribute="width" constant="128" id="Ltn-11-X6E"/>
@@ -415,6 +414,7 @@
                         <outlet property="myUserEnergyLabel" destination="lnL-mj-XUM" id="UPN-uU-bJU"/>
                         <outlet property="myUserGoldLabel" destination="Oji-kZ-sL4" id="bd4-TY-nfm"/>
                         <outlet property="myUserHasarLabel" destination="GhM-X5-GjE" id="hGh-Qp-NLK"/>
+                        <outlet property="myUserImageView" destination="z1Y-fi-BeK" id="MYZ-fx-TmY"/>
                         <outlet property="myUserSeviyeLabel" destination="qL1-Bk-Qtl" id="0gJ-M0-vAI"/>
                         <outlet property="myUserTurLabel" destination="LHG-v9-vBT" id="LrR-cO-Div"/>
                     </connections>
@@ -472,7 +472,6 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="xmark.shield.fill" catalog="system" width="128" height="119"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

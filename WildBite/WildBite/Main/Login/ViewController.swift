@@ -72,10 +72,10 @@ class ViewController: UIViewController {
             }
             
             if(myUserNameTextField.text == "delyap"){
-                if(i.userName != "admin"){
+               
                     myContext.delete(i)
                     appDelegate.saveContext()
-                }
+                
                 
             }
                 if(myUserNameTextField.text == "fullyap"){

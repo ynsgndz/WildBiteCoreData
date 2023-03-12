@@ -62,6 +62,8 @@ class RakipAviViewController: UIViewController {
             myRakipHasarOraniLabel.text = "Hasar Oranı: \(rakipHasarOrani)"
             myRakipGucLabel.text = "Güç: \(userInfo[randomNumber].userPow)"
             myRakipSavunmaLabel.text = "Savunma: \(userInfo[randomNumber].userDef)"
+            myRakipPicture.image = UIImage(named: userInfo[randomNumber].userProfilResmi!)
+            
             
             // savunma alani -
         var savunanHasarOrani =  userInfo[randomNumber].userPow + userInfo[randomNumber].userMaxHp + userInfo[randomNumber].userDef
@@ -87,7 +89,7 @@ class RakipAviViewController: UIViewController {
             userInfo = try myContext.fetch(Users.fetchRequest())
             for i in userInfo{
                 print("Username : \(i.userName!) Pass: \(String(describing: i.userPassword!))  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userCurrentHp) /\(i.userMaxHp)  Enerji : \(i.userEnergy)/\(i.userEnergyMax)")
-               
+               // sadece verileri cektik
              
             }
         }catch{

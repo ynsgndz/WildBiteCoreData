@@ -13,6 +13,7 @@ class GenelBakisHomeViewController: UIViewController {
     let myContext = genelBakisHomeAppDelegate.persistentContainer.viewContext
     var userInfo = [Users]()
     
+    @IBOutlet weak var myUserImageView: UIImageView!
     
     @IBOutlet weak var myUserSeviyeLabel: UILabel!
     @IBOutlet weak var myUserAdiLabel: UILabel!
@@ -32,6 +33,7 @@ class GenelBakisHomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         print("viewWillAppear: sayfa goruntulenicek")
         veriOkuma()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -70,6 +72,8 @@ class GenelBakisHomeViewController: UIViewController {
                 myUserTurLabel.text = "Tür: \(String(describing: i.userRace!.uppercased()))"
                 myUserAdiLabel.text = "Adı: \(String(describing: i.userName!))"
                 myUserSeviyeLabel.text = "Seviye: \(i.userLevel)"
+                
+                myUserImageView.image = UIImage(named: "\(String(describing: i.userProfilResmi!))")
             }else {
                 print("uygulamadan cik la")
             }

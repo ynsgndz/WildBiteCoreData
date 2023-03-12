@@ -12,6 +12,7 @@
         <attribute name="userName" optional="YES" attributeType="String"/>
         <attribute name="userPassword" optional="YES" attributeType="String"/>
         <attribute name="userPow" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userProfilResmi" optional="YES" attributeType="String"/>
         <attribute name="userRace" optional="YES" attributeType="String"/>
         <attribute name="userToplamGalibiyet" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="userToplamGelir" optional="YES" attributeType="Integer 32" defaultValueString="100" usesScalarValueType="YES"/>
