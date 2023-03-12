@@ -17,11 +17,14 @@ Sayfalar ve özellikleri
   * Av sayfasi
     * insan avi
        
-              *       - Mahallede avlanma
+              *       - Mahallede avlanma 
               *       - Köyde avlanma
               *       - Kasabada avlanma
               *       - Şehirde avlanma
           
     * Rakip avi 
+           
+           *  -Normal Rakip (kazanma ve ödüller)
+           *  -Guclu Rakip (kaybetme ve cezalar)
         
 * Genel Bakis sayfasi
