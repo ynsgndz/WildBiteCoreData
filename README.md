@@ -4,6 +4,7 @@ A mobile game of Werewolf and wampire.
 
 Library and technologies
 - CoreData
+- Userdefaults
 
 
 
@@ -28,3 +29,10 @@ Sayfalar ve özellikleri
            *  -Guclu Rakip (kaybetme ve cezalar)
         
 * Genel Bakis sayfasi
+* Şehir
+  - Market
+  - Görev yeri
+  - İtem Yükseltme  
+* Yüksek Skor/ Sıralama 
+  - Kurtadam
+  - Vampir
