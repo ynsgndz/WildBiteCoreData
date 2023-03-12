@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         }
         
         for i in userInfo {
-            print("Username : \(i.userName!) Pass: \(String(describing: i.userPassword!))  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userCurrentHp) /\(i.userMaxHp)  Enerji : \(i.userEnergy)/\(i.userEnergyMax)")
+            print("Username : \(String(describing: i.userName)) Pass: \(String(describing: i.userPassword))  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userCurrentHp) /\(i.userMaxHp)  Enerji : \(i.userEnergy)/\(i.userEnergyMax)")
             
         }
     }

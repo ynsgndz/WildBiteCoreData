@@ -30,8 +30,7 @@ class RegisterViewController: UIViewController {
     
     func veriKaydi (){
     let user = Users(context: myContext)
-        guard myUserPasswordTextField.text != nil else {return}
-        guard myUserNameTextField.text != nil else{return}
+       
         
         user.userRace = userRace
         user.userLevel = 1
@@ -42,7 +41,7 @@ class RegisterViewController: UIViewController {
         
         user.userPassword = myUserPasswordTextField.text
         user.userName = myUserNameTextField.text
-        var randomNumber = Int.random(in: 1...6)
+        let randomNumber = Int.random(in: 1...6)
         
         if(userRace == "vampir"){
             user.userProfilResmi = "vampir\(randomNumber)"
@@ -78,8 +77,14 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func myKayitOlButton(_ sender: Any) {
-        UserDefaults.standard.set(myUserNameTextField.text, forKey: "GirisYapanKullanici")
-        veriKaydi()
+       // UserDefaults.standard.set(myUserNameTextField.text, forKey: "GirisYapanKullanici")
+        if(myUserNameTextField.text != "" && myUserPasswordTextField.text != ""){
+            veriKaydi()
+        }else{
+            myUserNameTextField.placeholder = "bos birakmayin"
+            myUserPasswordTextField.placeholder = "bos birakmayin"
+        }
+        
         
     }
 }
