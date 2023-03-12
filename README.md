@@ -5,7 +5,7 @@ A mobile game of Werewolf and wampire.
 Library and technologies
 - CoreData
 - Userdefaults
-
+- UIImage
 
 
 Sayfalar ve özellikleri
