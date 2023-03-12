@@ -19,7 +19,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "gradientBG.png")!)
        
         
        
