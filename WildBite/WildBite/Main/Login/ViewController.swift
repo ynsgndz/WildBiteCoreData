@@ -80,18 +80,23 @@ class ViewController: UIViewController {
             }
                 if(myUserNameTextField.text == "fullyap"){
                     if(i.userName != "admin"){
-                        i.userCurrentHp += 300
-                        i.userEnergy += 50
+                        if(i.userCurrentHp < 500){
+                            i.userCurrentHp += 500
+                        }
+                        if(i.userEnergy < 50){
+                            i.userEnergy += 50
+                        }
+                        
                         appDelegate.saveContext()
                     }else{
-                        i.userGold = 1000000
-                        i.userPow = 10
-                        i.userDef = 10
-                        i.userEnergy = 10000
-                        i.userLevel = 1
+                        i.userGold = 100000
+                        i.userPow = 100
+                        i.userDef = 100
+                        i.userEnergy = 1000
+                        i.userLevel = 99
                         i.userMaxHp = 1000
-                        i.userCurrentHp = 1000000
-                        i.userExp = 1000
+                        i.userCurrentHp = 10000
+                        i.userExp = 0
                         
                         appDelegate.saveContext()
                     }

@@ -28,6 +28,9 @@
                                 <rect key="frame" x="64" y="147.66666666666666" width="265" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Rakip Ara"/>
+                                <connections>
+                                    <segue destination="Xph-dZ-98X" kind="presentation" modalPresentationStyle="fullScreen" id="N0I-z4-eM8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İnsan Avı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-NH-gn5">
                                 <rect key="frame" x="16" y="214.66666666666666" width="130.66666666666666" height="40.666666666666657"/>
@@ -47,9 +50,6 @@
                                 <rect key="frame" x="64" y="354.33333333333331" width="265" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Köyde Ava Çık (10 enerji)"/>
-                                <connections>
-                                    <segue destination="QDC-dG-7FM" kind="presentation" modalPresentationStyle="fullScreen" id="nZ7-2c-DUA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFv-Jp-au0">
                                 <rect key="frame" x="64" y="421.33333333333331" width="265" height="35"/>
@@ -63,9 +63,6 @@
                                 <rect key="frame" x="64" y="488.33333333333331" width="265" height="34.999999999999943"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Şehirde ava çık (20 enerji)"/>
-                                <connections>
-                                    <segue destination="8AD-gl-yqy" kind="presentation" modalPresentationStyle="fullScreen" id="SZs-u0-Pyu"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -92,7 +89,7 @@
                             <constraint firstItem="tFv-Jp-au0" firstAttribute="top" secondItem="eK7-WF-dIS" secondAttribute="bottom" constant="32" id="xXK-HB-q7a"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Av" image="figure.hunting" catalog="system" id="TpD-vG-fNM"/>
+                    <tabBarItem key="tabBarItem" title="Av" image="xmark.shield.fill" catalog="system" id="TpD-vG-fNM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,18 +103,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şehir sayfası" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9u-NL-51B">
-                                <rect key="frame" x="148.66666666666666" y="415.66666666666669" width="96" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hg-QA-XqB">
+                                <rect key="frame" x="16" y="91" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Market"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0xH-j1-uCk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="s9u-NL-51B" firstAttribute="centerY" secondItem="soK-iQ-uNl" secondAttribute="centerY" id="3jN-dO-J2m"/>
-                            <constraint firstItem="s9u-NL-51B" firstAttribute="centerX" secondItem="soK-iQ-uNl" secondAttribute="centerX" id="PLr-7O-drU"/>
+                            <constraint firstItem="9Hg-QA-XqB" firstAttribute="leading" secondItem="0xH-j1-uCk" secondAttribute="leading" constant="16" id="Piu-gB-YjY"/>
+                            <constraint firstItem="0xH-j1-uCk" firstAttribute="trailing" secondItem="9Hg-QA-XqB" secondAttribute="trailing" constant="16" id="f5d-xH-9QD"/>
+                            <constraint firstItem="9Hg-QA-XqB" firstAttribute="top" secondItem="0xH-j1-uCk" secondAttribute="top" constant="32" id="sp1-t8-wX2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Şehir" image="location.magnifyingglass" catalog="system" id="ONZ-rR-cZV"/>
@@ -134,70 +131,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uht-bv-2Gr">
-                                <rect key="frame" x="64" y="702" width="265" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cikis"/>
-                                <connections>
-                                    <segue destination="BKR-Db-GXe" kind="presentation" modalPresentationStyle="fullScreen" id="RZh-pL-VUH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplam Gelir : ####" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hej-Pq-RaA">
-                                <rect key="frame" x="16" y="91" width="149.66666666666666" height="21"/>
+                                <rect key="frame" x="16" y="119" width="149.66666666666666" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savaş : ####" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzM-30-IAr">
-                                <rect key="frame" x="15.999999999999993" y="120" width="99.333333333333314" height="21"/>
+                                <rect key="frame" x="15.999999999999993" y="148" width="99.333333333333314" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galibiyet : ####" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-bt-pIt">
-                                <rect key="frame" x="16" y="149" width="121" height="21"/>
+                                <rect key="frame" x="16" y="177" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yenilgi : ####" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xti-sX-Ap9">
-                                <rect key="frame" x="16" y="178" width="104" height="21"/>
+                                <rect key="frame" x="16" y="206" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İnsan Avı  : ####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q9-tG-0XJ">
-                                <rect key="frame" x="15.999999999999993" y="207" width="126.33333333333331" height="21"/>
+                                <rect key="frame" x="15.999999999999993" y="235" width="126.33333333333331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can  : ####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-wP-sfx">
-                                <rect key="frame" x="16" y="236" width="89" height="21"/>
+                                <rect key="frame" x="16" y="264" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" alpha="0.5" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="itd-Lj-1fw">
-                                <rect key="frame" x="0.0" y="318" width="393" height="4"/>
+                                <rect key="frame" x="0.0" y="346" width="393" height="4"/>
                             </progressView>
                             <progressView opaque="NO" alpha="0.5" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-7j-DgB">
-                                <rect key="frame" x="0.0" y="449" width="393" height="4"/>
+                                <rect key="frame" x="0.0" y="477" width="393" height="4"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Güç : ####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-lV-kpf">
-                                <rect key="frame" x="16" y="338" width="85.333333333333329" height="21"/>
+                                <rect key="frame" x="16" y="366" width="85.333333333333329" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(xxx Gold)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPv-rz-Eue">
-                                <rect key="frame" x="184.33333333333334" y="338" width="78.000000000000028" height="21"/>
+                                <rect key="frame" x="184.33333333333334" y="366" width="78.000000000000028" height="21"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lJ-OJ-gLj">
-                                <rect key="frame" x="133.33333333333334" y="331" width="35" height="35"/>
+                                <rect key="frame" x="133.33333333333334" y="359" width="35" height="35"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="+"/>
@@ -206,19 +195,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savunma : ####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-y9-DFh">
-                                <rect key="frame" x="16.000000000000007" y="391" width="124.66666666666669" height="21"/>
+                                <rect key="frame" x="16.000000000000007" y="419" width="124.66666666666669" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(xxx Gold)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOy-ud-NRt">
-                                <rect key="frame" x="223.66666666666663" y="391" width="78" height="21"/>
+                                <rect key="frame" x="223.66666666666663" y="419" width="78" height="21"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoa-Nh-xve">
-                                <rect key="frame" x="172.66666666666666" y="382" width="35" height="35"/>
+                                <rect key="frame" x="172.66666666666666" y="410" width="35" height="35"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="+"/>
@@ -227,19 +216,32 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tecrube : ####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqa-iK-ccE">
-                                <rect key="frame" x="16" y="265" width="117" height="21"/>
+                                <rect key="frame" x="16" y="293" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baW-wX-PcF">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="Profil" id="MBd-9e-O3Z">
+                                        <barButtonItem key="rightBarButtonItem" title="Çıkıs" id="raz-a6-FBH">
+                                            <connections>
+                                                <segue destination="BKR-Db-GXe" kind="presentation" modalPresentationStyle="fullScreen" id="9O7-6w-6qt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lUa-UV-t8Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Hej-Pq-RaA" firstAttribute="top" secondItem="lUa-UV-t8Q" secondAttribute="top" constant="32" id="01H-2q-aKe"/>
+                            <constraint firstItem="Hej-Pq-RaA" firstAttribute="top" secondItem="baW-wX-PcF" secondAttribute="bottom" constant="16" id="01H-2q-aKe"/>
                             <constraint firstItem="3cg-7j-DgB" firstAttribute="trailing" secondItem="lUa-UV-t8Q" secondAttribute="trailing" id="091-Jo-QE1"/>
                             <constraint firstItem="2Q9-tG-0XJ" firstAttribute="top" secondItem="xti-sX-Ap9" secondAttribute="bottom" constant="8" id="0LQ-dS-sXj"/>
                             <constraint firstItem="nkg-y9-DFh" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" constant="16" id="1HL-L6-Nbd"/>
+                            <constraint firstItem="baW-wX-PcF" firstAttribute="trailing" secondItem="lUa-UV-t8Q" secondAttribute="trailing" id="3qL-56-8St"/>
                             <constraint firstItem="aaA-lV-kpf" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" constant="16" id="6hE-24-zcP"/>
                             <constraint firstItem="aOy-ud-NRt" firstAttribute="top" secondItem="aPv-rz-Eue" secondAttribute="bottom" constant="32" id="7VY-gM-zch"/>
                             <constraint firstItem="3cg-7j-DgB" firstAttribute="top" secondItem="eoa-Nh-xve" secondAttribute="bottom" constant="32" id="9rA-ux-2JJ"/>
@@ -247,6 +249,7 @@
                             <constraint firstItem="7lJ-OJ-gLj" firstAttribute="top" secondItem="itd-Lj-1fw" secondAttribute="bottom" constant="9" id="GDg-hB-jTJ"/>
                             <constraint firstItem="aaA-lV-kpf" firstAttribute="top" secondItem="itd-Lj-1fw" secondAttribute="bottom" constant="16" id="Hhh-cy-EUV"/>
                             <constraint firstItem="TzM-30-IAr" firstAttribute="top" secondItem="Hej-Pq-RaA" secondAttribute="bottom" constant="8" id="IEL-pS-EM7"/>
+                            <constraint firstItem="baW-wX-PcF" firstAttribute="top" secondItem="lUa-UV-t8Q" secondAttribute="top" id="Irn-NW-NGH"/>
                             <constraint firstItem="eoa-Nh-xve" firstAttribute="leading" secondItem="nkg-y9-DFh" secondAttribute="trailing" constant="32" id="M9I-fg-72F"/>
                             <constraint firstItem="xti-sX-Ap9" firstAttribute="top" secondItem="szw-bt-pIt" secondAttribute="bottom" constant="8" id="RAT-Q5-Fwg"/>
                             <constraint firstItem="eoa-Nh-xve" firstAttribute="top" secondItem="7lJ-OJ-gLj" secondAttribute="bottom" constant="16" id="RpH-FY-zK6"/>
@@ -263,12 +266,10 @@
                             <constraint firstItem="Aqa-iK-ccE" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" constant="16" id="iiT-7g-IaZ"/>
                             <constraint firstItem="xti-sX-Ap9" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" constant="16" id="kC7-X0-EC7"/>
                             <constraint firstItem="lUa-UV-t8Q" firstAttribute="trailing" secondItem="itd-Lj-1fw" secondAttribute="trailing" id="ntu-P8-uYh"/>
-                            <constraint firstItem="lUa-UV-t8Q" firstAttribute="bottom" secondItem="uht-bv-2Gr" secondAttribute="bottom" constant="32" id="tYY-th-tRa"/>
-                            <constraint firstItem="uht-bv-2Gr" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" constant="64" id="tx8-4S-2wP"/>
                             <constraint firstItem="nkg-y9-DFh" firstAttribute="top" secondItem="aaA-lV-kpf" secondAttribute="bottom" constant="32" id="vbI-lI-Sys"/>
                             <constraint firstItem="aOy-ud-NRt" firstAttribute="leading" secondItem="eoa-Nh-xve" secondAttribute="trailing" constant="16" id="wpW-C1-t8z"/>
+                            <constraint firstItem="baW-wX-PcF" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" id="wsX-Bb-gmL"/>
                             <constraint firstItem="itd-Lj-1fw" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" id="xIC-Qc-jnS"/>
-                            <constraint firstItem="lUa-UV-t8Q" firstAttribute="trailing" secondItem="uht-bv-2Gr" secondAttribute="trailing" constant="64" id="yyZ-vg-hDh"/>
                             <constraint firstItem="Aqa-iK-ccE" firstAttribute="top" secondItem="PaH-wP-sfx" secondAttribute="bottom" constant="8" id="zJ1-yo-NBK"/>
                             <constraint firstItem="3cg-7j-DgB" firstAttribute="leading" secondItem="lUa-UV-t8Q" secondAttribute="leading" id="zSt-XJ-NFl"/>
                         </constraints>
@@ -300,12 +301,12 @@
                 <viewControllerPlaceholder storyboardIdentifier="MainGiris" storyboardName="Main" referencedIdentifier="MainGiris" id="BKR-Db-GXe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJl-ME-3Cv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="893"/>
+            <point key="canvasLocation" x="480" y="463"/>
         </scene>
-        <!--Anasayfa-->
+        <!--GenelBakisHome-->
         <scene sceneID="0WJ-9G-d3g">
             <objects>
-                <viewController title="Anasayfa" id="Lcg-ST-GQg" customClass="GenelBakisHomeViewController" customModule="WildBite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GenelBakisHome" id="Lcg-ST-GQg" customClass="GenelBakisHomeViewController" customModule="WildBite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Home" id="16N-73-q6p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,13 +344,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tür : #####" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHG-v9-vBT">
-                                <rect key="frame" x="16" y="287" width="369" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="287" width="369" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adi : #####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-oL-RXk">
-                                <rect key="frame" x="16" y="323.33333333333331" width="369" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="322.33333333333331" width="369" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -359,17 +360,17 @@
                                 <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <progressView opaque="NO" alpha="0.44999998807907104" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="9IM-h8-5G4">
-                                <rect key="frame" x="8" y="412" width="393" height="4"/>
+                                <rect key="frame" x="8" y="411" width="393" height="4"/>
                                 <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seviye : #####" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL1-Bk-Qtl">
-                                <rect key="frame" x="16" y="359.66666666666669" width="369" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="358.66666666666669" width="369" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Envanter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCh-JF-sG6">
-                                <rect key="frame" x="15.999999999999993" y="424" width="121.33333333333331" height="39"/>
+                                <rect key="frame" x="15.999999999999993" y="423" width="121.33333333333331" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -442,6 +443,14 @@
             </objects>
             <point key="canvasLocation" x="-1613" y="-65"/>
         </scene>
+        <!--RakipAvi-->
+        <scene sceneID="9n4-tt-Dao">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RakipAvi" storyboardName="RakipAvi" referencedIdentifier="RakipAvi" id="Xph-dZ-98X" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdK-Gz-gua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="-214"/>
+        </scene>
         <!--MahalleAv-->
         <scene sceneID="gYv-7e-dIr">
             <objects>
@@ -449,14 +458,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t45-zs-dok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="715" y="-66"/>
-        </scene>
-        <!--KoyAv-->
-        <scene sceneID="FKp-iI-ADg">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="KoyAv" storyboardName="KoyAv" referencedIdentifier="KoyAv" id="QDC-dG-7FM" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n5p-Bh-rFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="715" y="-16"/>
         </scene>
         <!--KasabaAv-->
         <scene sceneID="ocr-SU-CpC">
@@ -466,21 +467,13 @@
             </objects>
             <point key="canvasLocation" x="715" y="29"/>
         </scene>
-        <!--SehirAv-->
-        <scene sceneID="IBK-nm-HFR">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SehirAv" storyboardName="SehirAv" referencedIdentifier="SehirAv" id="8AD-gl-yqy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O25-JH-huV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="715" y="70"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="figure.hunting" catalog="system" width="128" height="110"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="xmark.shield.fill" catalog="system" width="128" height="119"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

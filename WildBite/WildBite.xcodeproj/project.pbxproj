@@ -11,12 +11,15 @@
 		884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */; };
 		884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */; };
 		884F095129BCCA9E00203DA9 /* InsanAviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */; };
-		884F095329BCCAA700203DA9 /* RakipAviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F095229BCCAA700203DA9 /* RakipAviViewController.swift */; };
+		884F095329BCCAA700203DA9 /* YuksekSkorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F095229BCCAA700203DA9 /* YuksekSkorViewController.swift */; };
 		884F095929BCD30500203DA9 /* KasabaAv.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884F095829BCD30500203DA9 /* KasabaAv.storyboard */; };
-		884F095B29BCD30C00203DA9 /* KoyAv.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884F095A29BCD30C00203DA9 /* KoyAv.storyboard */; };
 		884F095D29BCD31300203DA9 /* MahalleAv.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884F095C29BCD31300203DA9 /* MahalleAv.storyboard */; };
-		884F095F29BCD31E00203DA9 /* SehirAv.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884F095E29BCD31E00203DA9 /* SehirAv.storyboard */; };
 		8866932F29BC871800E0BBEA /* GenelBakisHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */; };
+		886C470D29BDB52300E4D05F /* YuksekSkor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886C470C29BDB52300E4D05F /* YuksekSkor.storyboard */; };
+		886C470F29BDB6FC00E4D05F /* YuksekSkorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C470E29BDB6FC00E4D05F /* YuksekSkorTableViewCell.swift */; };
+		886C471229BDC07300E4D05F /* RakipAvi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886C471129BDC07300E4D05F /* RakipAvi.storyboard */; };
+		886C471429BDC08700E4D05F /* RakipAviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C471329BDC08700E4D05F /* RakipAviViewController.swift */; };
+		886C471629BDD88000E4D05F /* RakipAviOzetiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C471529BDD88000E4D05F /* RakipAviOzetiViewController.swift */; };
 		887DD24B29B8A3F8004AEC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD24A29B8A3F8004AEC30 /* AppDelegate.swift */; };
 		887DD24D29B8A3F8004AEC30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD24C29B8A3F8004AEC30 /* SceneDelegate.swift */; };
 		887DD24F29B8A3F8004AEC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD24E29B8A3F8004AEC30 /* ViewController.swift */; };
@@ -53,12 +56,15 @@
 		884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvSayfasiViewController.swift; sourceTree = "<group>"; };
 		884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSayfasiViewController.swift; sourceTree = "<group>"; };
 		884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsanAviViewController.swift; sourceTree = "<group>"; };
-		884F095229BCCAA700203DA9 /* RakipAviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakipAviViewController.swift; sourceTree = "<group>"; };
+		884F095229BCCAA700203DA9 /* YuksekSkorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuksekSkorViewController.swift; sourceTree = "<group>"; };
 		884F095829BCD30500203DA9 /* KasabaAv.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KasabaAv.storyboard; sourceTree = "<group>"; };
-		884F095A29BCD30C00203DA9 /* KoyAv.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KoyAv.storyboard; sourceTree = "<group>"; };
 		884F095C29BCD31300203DA9 /* MahalleAv.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MahalleAv.storyboard; sourceTree = "<group>"; };
-		884F095E29BCD31E00203DA9 /* SehirAv.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SehirAv.storyboard; sourceTree = "<group>"; };
 		8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenelBakisHomeViewController.swift; sourceTree = "<group>"; };
+		886C470C29BDB52300E4D05F /* YuksekSkor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YuksekSkor.storyboard; sourceTree = "<group>"; };
+		886C470E29BDB6FC00E4D05F /* YuksekSkorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuksekSkorTableViewCell.swift; sourceTree = "<group>"; };
+		886C471129BDC07300E4D05F /* RakipAvi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RakipAvi.storyboard; sourceTree = "<group>"; };
+		886C471329BDC08700E4D05F /* RakipAviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakipAviViewController.swift; sourceTree = "<group>"; };
+		886C471529BDD88000E4D05F /* RakipAviOzetiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakipAviOzetiViewController.swift; sourceTree = "<group>"; };
 		887DD24729B8A3F8004AEC30 /* WildBite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildBite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887DD24A29B8A3F8004AEC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		887DD24C29B8A3F8004AEC30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,9 +111,9 @@
 		884F094829BCB0D600203DA9 /* AvSayfasi */ = {
 			isa = PBXGroup;
 			children = (
-				884F094F29BCCA7F00203DA9 /* InsanAvi */,
-				884F094E29BCCA7500203DA9 /* RakipAvi */,
 				884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */,
+				886C471029BDC04200E4D05F /* RakipAvi */,
+				884F094F29BCCA7F00203DA9 /* InsanAvi */,
 			);
 			path = AvSayfasi;
 			sourceTree = "<group>";
@@ -120,12 +126,14 @@
 			path = ProfilSayfasi;
 			sourceTree = "<group>";
 		};
-		884F094E29BCCA7500203DA9 /* RakipAvi */ = {
+		884F094E29BCCA7500203DA9 /* YuksekSkor */ = {
 			isa = PBXGroup;
 			children = (
-				884F095229BCCAA700203DA9 /* RakipAviViewController.swift */,
+				884F095229BCCAA700203DA9 /* YuksekSkorViewController.swift */,
+				886C470C29BDB52300E4D05F /* YuksekSkor.storyboard */,
+				886C470E29BDB6FC00E4D05F /* YuksekSkorTableViewCell.swift */,
 			);
-			path = RakipAvi;
+			path = YuksekSkor;
 			sourceTree = "<group>";
 		};
 		884F094F29BCCA7F00203DA9 /* InsanAvi */ = {
@@ -133,9 +141,7 @@
 			children = (
 				884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */,
 				884F095629BCD26800203DA9 /* KasabaAv */,
-				884F095529BCD25A00203DA9 /* KoyAv */,
 				884F095429BCD25400203DA9 /* MahalleAv */,
-				884F095729BCD27A00203DA9 /* SehirAv */,
 			);
 			path = InsanAvi;
 			sourceTree = "<group>";
@@ -149,14 +155,6 @@
 			path = MahalleAv;
 			sourceTree = "<group>";
 		};
-		884F095529BCD25A00203DA9 /* KoyAv */ = {
-			isa = PBXGroup;
-			children = (
-				884F095A29BCD30C00203DA9 /* KoyAv.storyboard */,
-			);
-			path = KoyAv;
-			sourceTree = "<group>";
-		};
 		884F095629BCD26800203DA9 /* KasabaAv */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,20 +163,23 @@
 			path = KasabaAv;
 			sourceTree = "<group>";
 		};
-		884F095729BCD27A00203DA9 /* SehirAv */ = {
-			isa = PBXGroup;
-			children = (
-				884F095E29BCD31E00203DA9 /* SehirAv.storyboard */,
-			);
-			path = SehirAv;
-			sourceTree = "<group>";
-		};
-		8866932D29BC86F900E0BBEA /* GenelBakis */ = {
+		8866932D29BC86F900E0BBEA /* GenelBakisHome */ = {
 			isa = PBXGroup;
 			children = (
 				8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */,
+				884F094E29BCCA7500203DA9 /* YuksekSkor */,
 			);
-			path = GenelBakis;
+			path = GenelBakisHome;
+			sourceTree = "<group>";
+		};
+		886C471029BDC04200E4D05F /* RakipAvi */ = {
+			isa = PBXGroup;
+			children = (
+				886C471129BDC07300E4D05F /* RakipAvi.storyboard */,
+				886C471329BDC08700E4D05F /* RakipAviViewController.swift */,
+				886C471529BDD88000E4D05F /* RakipAviOzetiViewController.swift */,
+			);
+			path = RakipAvi;
 			sourceTree = "<group>";
 		};
 		887DD23E29B8A3F8004AEC30 = {
@@ -262,10 +263,10 @@
 		88AE632629BBE1E400AF6955 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				88AE632729BBE20000AF6955 /* Home.storyboard */,
 				884F094B29BCB13800203DA9 /* ProfilSayfasi */,
 				884F094829BCB0D600203DA9 /* AvSayfasi */,
-				8866932D29BC86F900E0BBEA /* GenelBakis */,
-				88AE632729BBE20000AF6955 /* Home.storyboard */,
+				8866932D29BC86F900E0BBEA /* GenelBakisHome */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -375,10 +376,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				887DD25A29B8A3FA004AEC30 /* LaunchScreen.storyboard in Resources */,
-				884F095B29BCD30C00203DA9 /* KoyAv.storyboard in Resources */,
+				886C471229BDC07300E4D05F /* RakipAvi.storyboard in Resources */,
 				887DD25729B8A3FA004AEC30 /* Assets.xcassets in Resources */,
-				884F095F29BCD31E00203DA9 /* SehirAv.storyboard in Resources */,
 				884F095929BCD30500203DA9 /* KasabaAv.storyboard in Resources */,
+				886C470D29BDB52300E4D05F /* YuksekSkor.storyboard in Resources */,
 				887DD25229B8A3F8004AEC30 /* Main.storyboard in Resources */,
 				88AE632829BBE20000AF6955 /* Home.storyboard in Resources */,
 				884F095D29BCD31300203DA9 /* MahalleAv.storyboard in Resources */,
@@ -407,13 +408,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				887DD24F29B8A3F8004AEC30 /* ViewController.swift in Sources */,
+				886C471629BDD88000E4D05F /* RakipAviOzetiViewController.swift in Sources */,
 				8866932F29BC871800E0BBEA /* GenelBakisHomeViewController.swift in Sources */,
 				884F095129BCCA9E00203DA9 /* InsanAviViewController.swift in Sources */,
 				88AE632529BBDB5000AF6955 /* RegisterViewController.swift in Sources */,
 				884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */,
-				884F095329BCCAA700203DA9 /* RakipAviViewController.swift in Sources */,
+				886C471429BDC08700E4D05F /* RakipAviViewController.swift in Sources */,
+				884F095329BCCAA700203DA9 /* YuksekSkorViewController.swift in Sources */,
 				887DD25529B8A3F8004AEC30 /* WildBite.xcdatamodeld in Sources */,
 				8816335329BCE87300F03BEC /* MahalleAvViewController.swift in Sources */,
+				886C470F29BDB6FC00E4D05F /* YuksekSkorTableViewCell.swift in Sources */,
 				884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */,
 				887DD24B29B8A3F8004AEC30 /* AppDelegate.swift in Sources */,
 				887DD24D29B8A3F8004AEC30 /* SceneDelegate.swift in Sources */,
