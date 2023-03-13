@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -66,7 +65,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="svD-ZB-R7L" firstAttribute="top" secondItem="tFv-Jp-au0" secondAttribute="bottom" constant="32" id="4zr-dB-02d"/>
                             <constraint firstItem="mID-G3-czb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="9Pi-vW-r5K"/>
@@ -110,7 +109,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0xH-j1-uCk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9Hg-QA-XqB" firstAttribute="leading" secondItem="0xH-j1-uCk" secondAttribute="leading" constant="16" id="Piu-gB-YjY"/>
                             <constraint firstItem="0xH-j1-uCk" firstAttribute="trailing" secondItem="9Hg-QA-XqB" secondAttribute="trailing" constant="16" id="f5d-xH-9QD"/>
@@ -223,6 +222,7 @@
                             </label>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baW-wX-PcF">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Profil" id="MBd-9e-O3Z">
                                         <barButtonItem key="rightBarButtonItem" title="Çıkıs" id="raz-a6-FBH">
@@ -235,7 +235,7 @@
                             </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lUa-UV-t8Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Hej-Pq-RaA" firstAttribute="top" secondItem="baW-wX-PcF" secondAttribute="bottom" constant="16" id="01H-2q-aKe"/>
                             <constraint firstItem="3cg-7j-DgB" firstAttribute="trailing" secondItem="lUa-UV-t8Q" secondAttribute="trailing" id="091-Jo-QE1"/>
@@ -321,13 +321,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold : ##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oji-kZ-sL4">
                                 <rect key="frame" x="176" y="91" width="69.666666666666686" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <color key="textColor" red="1" green="0.60658987480000004" blue="0.17318071509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enerji : ##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnL-mj-XUM">
                                 <rect key="frame" x="176" y="120" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="AccentColor"/>
+                                <color key="textColor" red="0.98497718572616577" green="0.99554997682571411" blue="0.004957178607583046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can: ##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi2-od-EnF">
@@ -376,7 +376,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="05L-KW-iBh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9IM-h8-5G4" firstAttribute="leading" secondItem="05L-KW-iBh" secondAttribute="leading" constant="8" id="0fb-Yc-Viq"/>
                             <constraint firstItem="GhM-X5-GjE" firstAttribute="leading" secondItem="z1Y-fi-BeK" secondAttribute="trailing" constant="32" id="0sT-5S-e3r"/>
@@ -473,20 +473,11 @@
         <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="xmark.shield.fill" catalog="system" width="128" height="119"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

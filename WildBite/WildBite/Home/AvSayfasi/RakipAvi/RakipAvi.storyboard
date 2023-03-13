@@ -25,8 +25,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-4i-PdO">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-4i-PdO">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Rakip Avı" id="uZA-Ws-NT1">
                                         <barButtonItem key="leftBarButtonItem" title="Geri" id="esn-Ng-XTN">
@@ -100,7 +101,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="fWj-fT-XOi" firstAttribute="top" secondItem="Dlp-4i-PdO" secondAttribute="bottom" constant="32" id="3FK-7O-OqA"/>
                             <constraint firstItem="e1J-va-WsK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="8qR-OG-Z2M"/>
@@ -156,8 +157,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOM-zo-6Xf">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOM-zo-6Xf">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Rakip Avı Özeti" id="YPh-mH-WOF">
                                         <barButtonItem key="leftBarButtonItem" title="Geri" id="3Os-Bv-ig5">
@@ -246,7 +248,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zym-FN-Oh8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="eij-3z-0IH" firstAttribute="top" secondItem="fqv-mT-vTq" secondAttribute="bottom" constant="8" id="2uv-wl-HxD"/>
                             <constraint firstItem="Zym-FN-Oh8" firstAttribute="trailing" secondItem="ua0-VG-eas" secondAttribute="trailing" constant="32" id="4Ym-FR-H4o"/>
@@ -302,9 +304,6 @@
     <resources>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.wave.2" catalog="system" width="128" height="118"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

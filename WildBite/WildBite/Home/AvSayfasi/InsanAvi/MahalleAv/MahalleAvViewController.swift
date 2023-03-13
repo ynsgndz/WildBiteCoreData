@@ -25,6 +25,7 @@ class MahalleAvViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Debug: Av MahalleAvViewController  viewDidLoad run")
+            // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "gradientBG.png")!)
         veriOkuma()
     }
     
@@ -42,7 +43,7 @@ class MahalleAvViewController: UIViewController {
             userInfo = try myContext.fetch(Users.fetchRequest())
             for i in userInfo {
                 if(i.userName == loginUserName){
-                    myUserInfoLabel.text = "Gold: \(i.userGold)    Enerji: \(i.userEnergy) / \(i.userEnergyMax)   Can: \(i.userCurrentHp) / \(i.userMaxHp)"
+                    myUserInfoLabel.text =  "💰Para: \(i.userGold) ⚡️Enerji: \(i.userEnergy) / \(i.userEnergyMax) ❤️Can: \(i.userCurrentHp) /\(i.userMaxHp)"
                     
                 }
             }
@@ -74,11 +75,11 @@ class MahalleAvViewController: UIViewController {
                          i.userMaxHp = i.userLevel * 1000
                          i.userToplamInsanAvi += 1
                          myAppDelegate.saveContext()
-                        self.myUserInfoLabel.text = "  Gold: \(i.userGold)    Enerji: \(i.userEnergy) / \(i.userEnergyMax)   Can: \(i.userCurrentHp) / \(i.userMaxHp)"
+                        self.myUserInfoLabel.text = "💰Para: \(i.userGold) ⚡️Enerji: \(i.userEnergy) / \(i.userEnergyMax) ❤️Can: \(i.userCurrentHp) /\(i.userMaxHp)"
                         
                       
                         
-                        self.myAvYapildimiLabel.text = "Av Başarılı  (Tecrube +1) (Altın +10)"
+                        self.myAvYapildimiLabel.text = "Av Başarılı   +1🎖️  +10💰 "
                         self.myActivityIndicator.isHidden = true
                         self.myAvYapildimiLabel.textColor  = .systemGreen
                     }
@@ -87,7 +88,7 @@ class MahalleAvViewController: UIViewController {
                     
                    
                 }else{
-                    myAvYapildimiLabel.text = "Can veya Enerjiniz yetersiz"
+                    myAvYapildimiLabel.text = "❤️ veya ⚡️ yetersiz"
                     myAvYapildimiLabel.textColor  = .systemRed
                 }
                 

@@ -19,6 +19,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ren-Mc-7GF">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Rakip Avı" id="4X9-g7-91V">
                                         <barButtonItem key="leftBarButtonItem" title="Geri" id="J5W-pq-tmx">
@@ -59,6 +60,7 @@
                                                 <constraint firstItem="9wd-Pm-Vba" firstAttribute="top" secondItem="HvT-fO-R3p" secondAttribute="top" constant="16" id="ffp-J5-Utw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="myLabel" destination="9wd-Pm-Vba" id="FG6-vY-FIW"/>
                                         </connections>
@@ -67,7 +69,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="y87-VL-xmU" firstAttribute="top" secondItem="ren-Mc-7GF" secondAttribute="bottom" id="4PS-yU-tUP"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="y87-VL-xmU" secondAttribute="bottom" id="79p-iS-gO5"/>

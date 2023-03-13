@@ -76,18 +76,18 @@ class ProfilSayfasiViewController: UIViewController {
             if(i.userName == loginUserName){
                 print("Username : \(i.userName!)  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userMaxHp) Enerji : \(i.userEnergy)")
                 userSaldiriOrani = Int((i.userPow * 30) + (i.userDef * 15 ) + (i.userLevel * 100))
-                myToplamGelirLabel.text = "Toplam Gelir : \(i.userToplamGelir)"
-                userToplamSavasLabel.text = "Savaş : \(i.userToplamSavas)"
-                userToplamGalibiyetLabel.text = "Galibiyet : \(i.userToplamGalibiyet)"
-                myToplamYenilgiLabel.text = "Yenilgi : \(i.userToplamYenilgi)"
-                myToplamInsanAviLabel.text = "İnsan Avı : \(i.userToplamInsanAvi)"
-                myToplamCanLabel.text = "Can : \(i.userCurrentHp) / \(i.userMaxHp)"
+                myToplamGelirLabel.text = "💰 Toplam Gelir : \(i.userToplamGelir) "
+                userToplamSavasLabel.text = "⚔️ Savaş : \(i.userToplamSavas)  "
+                userToplamGalibiyetLabel.text = "😀 Galibiyet : \(i.userToplamGalibiyet) "
+                myToplamYenilgiLabel.text = "😡 Yenilgi : \(i.userToplamYenilgi) "
+                myToplamInsanAviLabel.text = "👁️ İnsan Avı : \(i.userToplamInsanAvi) "
+                myToplamCanLabel.text = "❤️ Can : \(i.userCurrentHp) / \(i.userMaxHp) "
                 //tecrube
                 let tecrubeMax = i.userLevel * 100
                 let tecrubeCur = i.userExp % (tecrubeMax)
-                myTecrubeLabel.text = "Tecrübe : \(tecrubeCur) / \(tecrubeMax) "
-                myToplamGucLabel.text = "Güç : \(i.userPow)"
-                myToplamSavunmaLabel.text = "Savunma : \(i.userDef)"
+                myTecrubeLabel.text = "🎖️ Tecrübe : \(tecrubeCur) / \(tecrubeMax) "
+                myToplamGucLabel.text = "💪 Güç : \(i.userPow) "
+                myToplamSavunmaLabel.text = "🛡️ Savunma : \(i.userDef) "
              
                 myGucArttirGoldLabel.text = "(\(i.userGold) / \(userSaldiriOrani)) Altın"
                 mySavunmaArttirGoldLabel.text = "(\(i.userGold) / \(userSaldiriOrani)) Altın"
