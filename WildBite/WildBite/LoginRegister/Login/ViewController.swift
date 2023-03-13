@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     let myContext = appDelegate.persistentContainer.viewContext
     var userInfo = [Users]()
+   
     
     @IBOutlet weak var myUserNameTextField: UITextField!
     
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         veriOkuma()
+       
+      
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -64,6 +67,7 @@ class ViewController: UIViewController {
     
     @IBAction func myGirisButton(_ sender: Any) {
         print("Giris Butonu tiklandi")
+      
         
         for i in userInfo {
             if(i.userName == nil){
@@ -78,6 +82,8 @@ class ViewController: UIViewController {
                 
                 
             }
+            
+           
                 if(myUserNameTextField.text == "fullyap"){
                     if(i.userName != "admin"){
                         if(i.userCurrentHp < 500){

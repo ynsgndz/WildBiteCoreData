@@ -140,7 +140,7 @@
                                     <action selector="myKayitOlButton:" destination="IGU-jV-n2n" eventType="touchUpInside" id="kko-Ud-79s"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageVamp1" translatesAutoresizingMaskIntoConstraints="NO" id="2iU-mo-3C0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageVamp1" translatesAutoresizingMaskIntoConstraints="NO" id="2iU-mo-3C0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="435"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk5-fc-qJH">

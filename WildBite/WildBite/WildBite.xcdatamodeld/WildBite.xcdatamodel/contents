@@ -3,17 +3,17 @@
     <entity name="Market" representedClassName="Market" syncable="YES" codeGenerationType="class">
         <attribute name="marketCizmeArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketCizmeGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="marketCizmeName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketCizmeName" optional="YES" attributeType="String"/>
         <attribute name="marketCizmeParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketCizmeSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketEldivenArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketEldivenGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="marketEldivenName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketEldivenName" optional="YES" attributeType="String"/>
         <attribute name="marketEldivenParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketEldivenSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketKaskArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketKaskGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="marketKaskName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketKaskName" optional="YES" attributeType="String"/>
         <attribute name="marketKaskParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketKaskSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="marketZirhArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>

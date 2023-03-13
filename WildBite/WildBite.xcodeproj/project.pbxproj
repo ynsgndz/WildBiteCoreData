@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8816335329BCE87300F03BEC /* MahalleAvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816335229BCE87300F03BEC /* MahalleAvViewController.swift */; };
 		882937B129BFC952005807D9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882937B029BFC952005807D9 /* Home.storyboard */; };
+		882937B329BFCAA1005807D9 /* Market.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882937B229BFCAA1005807D9 /* Market.storyboard */; };
+		882937B529BFD7BA005807D9 /* KaskMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882937B429BFD7BA005807D9 /* KaskMarketViewController.swift */; };
+		882937B729BFD7D0005807D9 /* KaskMarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882937B629BFD7D0005807D9 /* KaskMarketTableViewCell.swift */; };
+		882937BA29BFE87B005807D9 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882937B929BFE87B005807D9 /* MarketViewController.swift */; };
 		884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */; };
 		884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */; };
 		884F095129BCCA9E00203DA9 /* InsanAviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */; };
@@ -54,6 +58,10 @@
 /* Begin PBXFileReference section */
 		8816335229BCE87300F03BEC /* MahalleAvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahalleAvViewController.swift; sourceTree = "<group>"; };
 		882937B029BFC952005807D9 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		882937B229BFCAA1005807D9 /* Market.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Market.storyboard; sourceTree = "<group>"; };
+		882937B429BFD7BA005807D9 /* KaskMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaskMarketViewController.swift; sourceTree = "<group>"; };
+		882937B629BFD7D0005807D9 /* KaskMarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaskMarketTableViewCell.swift; sourceTree = "<group>"; };
+		882937B929BFE87B005807D9 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvSayfasiViewController.swift; sourceTree = "<group>"; };
 		884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSayfasiViewController.swift; sourceTree = "<group>"; };
 		884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsanAviViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		882937B829BFE832005807D9 /* kask */ = {
+			isa = PBXGroup;
+			children = (
+				882937B629BFD7D0005807D9 /* KaskMarketTableViewCell.swift */,
+				882937B429BFD7BA005807D9 /* KaskMarketViewController.swift */,
+			);
+			path = kask;
+			sourceTree = "<group>";
+		};
 		884F094829BCB0D600203DA9 /* AvSayfasi */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +183,8 @@
 		8866932D29BC86F900E0BBEA /* GenelBakisHome */ = {
 			isa = PBXGroup;
 			children = (
-				884F094B29BCB13800203DA9 /* ProfilSayfasi */,
 				8898B1E129BFC75300F159DD /* Market */,
+				884F094B29BCB13800203DA9 /* ProfilSayfasi */,
 				8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */,
 				884F094E29BCCA7500203DA9 /* YuksekSkor */,
 			);
@@ -249,6 +266,9 @@
 		8898B1E129BFC75300F159DD /* Market */ = {
 			isa = PBXGroup;
 			children = (
+				882937B229BFCAA1005807D9 /* Market.storyboard */,
+				882937B829BFE832005807D9 /* kask */,
+				882937B929BFE87B005807D9 /* MarketViewController.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -272,9 +292,9 @@
 		88AE632629BBE1E400AF6955 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				882937B029BFC952005807D9 /* Home.storyboard */,
 				8866932D29BC86F900E0BBEA /* GenelBakisHome */,
 				884F094829BCB0D600203DA9 /* AvSayfasi */,
-				882937B029BFC952005807D9 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -390,6 +410,7 @@
 				886C470D29BDB52300E4D05F /* YuksekSkor.storyboard in Resources */,
 				887DD25229B8A3F8004AEC30 /* Main.storyboard in Resources */,
 				884F095D29BCD31300203DA9 /* MahalleAv.storyboard in Resources */,
+				882937B329BFCAA1005807D9 /* Market.storyboard in Resources */,
 				882937B129BFC952005807D9 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,13 +439,16 @@
 				887DD24F29B8A3F8004AEC30 /* ViewController.swift in Sources */,
 				886C471629BDD88000E4D05F /* RakipAviOzetiViewController.swift in Sources */,
 				8866932F29BC871800E0BBEA /* GenelBakisHomeViewController.swift in Sources */,
+				882937BA29BFE87B005807D9 /* MarketViewController.swift in Sources */,
 				884F095129BCCA9E00203DA9 /* InsanAviViewController.swift in Sources */,
 				88AE632529BBDB5000AF6955 /* RegisterViewController.swift in Sources */,
 				884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */,
 				886C471429BDC08700E4D05F /* RakipAviViewController.swift in Sources */,
+				882937B529BFD7BA005807D9 /* KaskMarketViewController.swift in Sources */,
 				884F095329BCCAA700203DA9 /* YuksekSkorViewController.swift in Sources */,
 				887DD25529B8A3F8004AEC30 /* WildBite.xcdatamodeld in Sources */,
 				8816335329BCE87300F03BEC /* MahalleAvViewController.swift in Sources */,
+				882937B729BFD7D0005807D9 /* KaskMarketTableViewCell.swift in Sources */,
 				886C470F29BDB6FC00E4D05F /* YuksekSkorTableViewCell.swift in Sources */,
 				884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */,
 				887DD24B29B8A3F8004AEC30 /* AppDelegate.swift in Sources */,

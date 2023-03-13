@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="gWL-xo-VAn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" referencedIdentifier="Home" id="24n-Ce-zY9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPR-3E-aH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="-234"/>
+        </scene>
+        <!--Market-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Market" title="Market" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Market" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXo-Sv-cXU">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem title="Market" id="fie-J8-dpI">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward.square" catalog="system" id="Xtl-pQ-Gei">
+                                            <color key="tintColor" red="0.4413127899" green="0.087256796659999997" blue="0.054861448710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="24n-Ce-zY9" kind="presentation" modalPresentationStyle="fullScreen" id="ehE-2G-zag"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyP-Jq-ai5">
+                                <rect key="frame" x="64" y="135" width="265" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="KASKLAR" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hjJ-Fb-sXW" kind="presentation" modalPresentationStyle="fullScreen" id="Ohp-jK-s5Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yml-zT-PuC">
+                                <rect key="frame" x="64" y="202" width="265" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ZIRHLAR" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH4-W1-EfU">
+                                <rect key="frame" x="64" y="269" width="265" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ELDİVENLER" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJY-WU-ybn">
+                                <rect key="frame" x="64" y="336" width="265" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ÇİZMELER" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBb-Jh-vHW">
+                                <rect key="frame" x="64" y="415" width="265" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="İÇECEKLER" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EBb-Jh-vHW" secondAttribute="trailing" constant="64" id="4gh-7d-fkS"/>
+                            <constraint firstItem="yml-zT-PuC" firstAttribute="top" secondItem="cyP-Jq-ai5" secondAttribute="bottom" constant="32" id="7hq-c0-PUP"/>
+                            <constraint firstItem="xH4-W1-EfU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="AAh-SJ-mW7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xH4-W1-EfU" secondAttribute="trailing" constant="64" id="APD-Fx-GDN"/>
+                            <constraint firstItem="gJY-WU-ybn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="B6Y-9L-doR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cyP-Jq-ai5" secondAttribute="trailing" constant="64" id="CqI-yX-1Yw"/>
+                            <constraint firstItem="nXo-Sv-cXU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Hny-IV-eTh"/>
+                            <constraint firstItem="cyP-Jq-ai5" firstAttribute="top" secondItem="nXo-Sv-cXU" secondAttribute="bottom" constant="32" id="SIR-VC-0HW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yml-zT-PuC" secondAttribute="trailing" constant="64" id="WDg-I5-eAJ"/>
+                            <constraint firstItem="nXo-Sv-cXU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ZD9-42-NUY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gJY-WU-ybn" secondAttribute="trailing" constant="64" id="eoz-IX-7J4"/>
+                            <constraint firstItem="EBb-Jh-vHW" firstAttribute="top" secondItem="gJY-WU-ybn" secondAttribute="bottom" constant="44" id="fTl-zq-coc"/>
+                            <constraint firstItem="cyP-Jq-ai5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="hzD-Qe-7cD"/>
+                            <constraint firstItem="xH4-W1-EfU" firstAttribute="top" secondItem="yml-zT-PuC" secondAttribute="bottom" constant="32" id="mqP-LQ-hT9"/>
+                            <constraint firstItem="EBb-Jh-vHW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="msx-kG-gqf"/>
+                            <constraint firstItem="gJY-WU-ybn" firstAttribute="top" secondItem="xH4-W1-EfU" secondAttribute="bottom" constant="32" id="oF3-Xi-ObQ"/>
+                            <constraint firstItem="nXo-Sv-cXU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sqF-gi-ovX"/>
+                            <constraint firstItem="yml-zT-PuC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="x2M-DO-eiC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="4"/>
+        </scene>
+        <!--Kask Market View Controller-->
+        <scene sceneID="FYL-kg-Y1J">
+            <objects>
+                <viewController id="hjJ-Fb-sXW" customClass="KaskMarketViewController" customModule="WildBite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fdJ-CI-s6q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTd-Ag-Brm">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem title="KASKLAR" id="eR2-zp-Z7w">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward.square" catalog="system" id="56S-l3-zxg">
+                                            <color key="tintColor" red="0.4413127899" green="0.087256796659999997" blue="0.054861448710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="Y6W-OH-hqX" kind="presentation" modalPresentationStyle="fullScreen" id="AX4-75-gUX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-D6-eMd">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="92" id="7sy-tv-4PS" customClass="KaskMarketTableViewCell" customModule="WildBite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7sy-tv-4PS" id="OoX-BT-HAz">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKn-aX-RWP">
+                                                    <rect key="frame" x="10" y="10" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstItem="pKn-aX-RWP" firstAttribute="top" secondItem="OoX-BT-HAz" secondAttribute="top" constant="10" id="Qjp-eO-8d4"/>
+                                                <constraint firstItem="pKn-aX-RWP" firstAttribute="leading" secondItem="OoX-BT-HAz" secondAttribute="leading" constant="10" id="k9p-iH-1Rr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myLabel" destination="pKn-aX-RWP" id="QD7-Pa-b21"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5AK-Ku-1YO"/>
+                        <color key="backgroundColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aTd-Ag-Brm" firstAttribute="leading" secondItem="5AK-Ku-1YO" secondAttribute="leading" id="3LH-V3-Xpe"/>
+                            <constraint firstItem="5AK-Ku-1YO" firstAttribute="bottom" secondItem="5g8-D6-eMd" secondAttribute="bottom" id="8bU-3X-F3v"/>
+                            <constraint firstItem="5AK-Ku-1YO" firstAttribute="trailing" secondItem="5g8-D6-eMd" secondAttribute="trailing" id="Mc4-1y-UTg"/>
+                            <constraint firstItem="5g8-D6-eMd" firstAttribute="leading" secondItem="5AK-Ku-1YO" secondAttribute="leading" id="QGH-aF-s0e"/>
+                            <constraint firstAttribute="trailing" secondItem="aTd-Ag-Brm" secondAttribute="trailing" id="bRW-mW-Rqn"/>
+                            <constraint firstItem="5g8-D6-eMd" firstAttribute="top" secondItem="aTd-Ag-Brm" secondAttribute="bottom" id="d1j-JJ-95j"/>
+                            <constraint firstItem="aTd-Ag-Brm" firstAttribute="top" secondItem="5AK-Ku-1YO" secondAttribute="top" id="pcf-pj-dvh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="5g8-D6-eMd" id="akT-99-Hep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMo-OQ-Xru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.48091603053433" y="-177.46478873239437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward.square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

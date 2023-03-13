@@ -27,10 +27,14 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-4i-PdO">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <color key="barTintColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Rakip Avı" id="uZA-Ws-NT1">
                                         <barButtonItem key="leftBarButtonItem" title="Geri" id="esn-Ng-XTN">
+                                            <color key="tintColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <segue destination="MrR-En-P0w" kind="presentation" modalPresentationStyle="fullScreen" id="Xup-E9-hh3"/>
                                             </connections>
@@ -78,6 +82,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2I-pn-78w">
                                 <rect key="frame" x="64" y="480" width="265" height="35"/>
+                                <color key="backgroundColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Saldır (-10 Enerji)"/>
@@ -87,6 +92,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-0x-Bcj">
                                 <rect key="frame" x="32" y="579" width="329" height="35"/>
+                                <color key="backgroundColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.53117007019999996" green="0.10316994039999999" blue="0.066614843899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Yeniden Ara (-1 Enerji)"/>
                                 <connections>
@@ -101,7 +108,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="fWj-fT-XOi" firstAttribute="top" secondItem="Dlp-4i-PdO" secondAttribute="bottom" constant="32" id="3FK-7O-OqA"/>
                             <constraint firstItem="e1J-va-WsK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="8qR-OG-Z2M"/>
@@ -159,10 +166,14 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOM-zo-6Xf">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <color key="barTintColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Rakip Avı Özeti" id="YPh-mH-WOF">
                                         <barButtonItem key="leftBarButtonItem" title="Geri" id="3Os-Bv-ig5">
+                                            <color key="tintColor" red="0.61800116299999996" green="0.52316474909999999" blue="0.38820907469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <segue destination="Y6W-OH-hqX" kind="presentation" modalPresentationStyle="fullScreen" id="CtL-3f-VFr"/>
                                             </connections>
@@ -248,7 +259,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zym-FN-Oh8"/>
-                        <color key="backgroundColor" red="0.81659835579999995" green="0.90578287840000005" blue="0.90980631109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.46547400950000001" green="0.30610337850000002" blue="0.29803335669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="eij-3z-0IH" firstAttribute="top" secondItem="fqv-mT-vTq" secondAttribute="bottom" constant="8" id="2uv-wl-HxD"/>
                             <constraint firstItem="Zym-FN-Oh8" firstAttribute="trailing" secondItem="ua0-VG-eas" secondAttribute="trailing" constant="32" id="4Ym-FR-H4o"/>
