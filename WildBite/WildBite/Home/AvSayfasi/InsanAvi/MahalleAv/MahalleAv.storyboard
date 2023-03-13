@@ -85,6 +85,10 @@
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-ho-6L3">
+                                <rect key="frame" x="193" y="469" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,7 +119,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myActivityIndicator" destination="7xU-ho-6L3" id="GHz-k2-iEj"/>
                         <outlet property="myAvYapildimiLabel" destination="e8N-pO-YvC" id="LNs-VB-tPE"/>
+                        <outlet property="mySaldirButton" destination="P4Y-mr-IJR" id="PrN-SM-oEE"/>
                         <outlet property="myUserInfoLabel" destination="SeL-li-MeC" id="YRo-Tg-W4Y"/>
                     </connections>
                 </viewController>

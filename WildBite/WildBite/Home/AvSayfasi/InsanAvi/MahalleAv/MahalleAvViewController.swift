@@ -14,6 +14,8 @@ let appMahalleAvDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class MahalleAvViewController: UIViewController {
     
+    @IBOutlet weak var mySaldirButton: UIButton!
+    @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var myAvYapildimiLabel: UILabel!
     @IBOutlet weak var myUserInfoLabel: UILabel!
     var loginUserName = UserDefaults.standard.string(forKey: "GirisYapanKullanici")
@@ -22,13 +24,13 @@ class MahalleAvViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Av saygasissi mah")
+        print("Debug: Av MahalleAvViewController  viewDidLoad run")
         veriOkuma()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("viewWillAppear: sayfa goruntulenicek")
         
+        print("Debug: Av MahalleAvViewController  viewWillAppear run")
         
         
         veriOkuma()
@@ -53,21 +55,37 @@ class MahalleAvViewController: UIViewController {
     }
     
     @IBAction func mySaldirButton(_ sender: Any) {
+       
         for i in userInfo {
             if(i.userName == loginUserName){
                 if(i.userEnergy >= 5 && i.userCurrentHp >= 20){
-                    i.userEnergy -= 5
-                    i.userCurrentHp -= 20
-                    i.userExp += 1
-                    i.userGold += 10
-                    i.userToplamGelir += 10
-                    i.userLevel = ( i.userExp / 100) + 1
-                    i.userMaxHp = i.userLevel * 1000
-                    myAppDelegate.saveContext()
-                    myUserInfoLabel.text = "  Gold: \(i.userGold)    Enerji: \(i.userEnergy) / \(i.userEnergyMax)   Can: \(i.userCurrentHp) / \(i.userMaxHp)"
-                    i.userToplamInsanAvi += 1
-                    myAvYapildimiLabel.text = "Av Başarılı"
-                    myAvYapildimiLabel.textColor  = .systemGreen
+                    self.myAvYapildimiLabel.text = "Avlanılıyor.."
+                    self.myAvYapildimiLabel.textColor  = .systemGray
+                    self.myActivityIndicator.isHidden = false
+                    mySaldirButton.isEnabled = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        self.mySaldirButton.isEnabled = true
+                         i.userEnergy -= 5
+                         i.userCurrentHp -= 20
+                         i.userExp += 1
+                         i.userGold += 10
+                         i.userToplamGelir += 10
+                         i.userLevel = ( i.userExp / 100) + 1
+                         i.userMaxHp = i.userLevel * 1000
+                         i.userToplamInsanAvi += 1
+                         myAppDelegate.saveContext()
+                        self.myUserInfoLabel.text = "  Gold: \(i.userGold)    Enerji: \(i.userEnergy) / \(i.userEnergyMax)   Can: \(i.userCurrentHp) / \(i.userMaxHp)"
+                        
+                      
+                        
+                        self.myAvYapildimiLabel.text = "Av Başarılı  (Tecrube +1) (Altın +10)"
+                        self.myActivityIndicator.isHidden = true
+                        self.myAvYapildimiLabel.textColor  = .systemGreen
+                    }
+                    
+                   
+                    
+                   
                 }else{
                     myAvYapildimiLabel.text = "Can veya Enerjiniz yetersiz"
                     myAvYapildimiLabel.textColor  = .systemRed
