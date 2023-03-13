@@ -88,7 +88,7 @@ class MahalleAvViewController: UIViewController {
                     
                    
                 }else{
-                    myAvYapildimiLabel.text = "❤️ veya ⚡️ yetersiz"
+                    myAvYapildimiLabel.text = "❤️Can veya ⚡️Enerji yetersiz"
                     myAvYapildimiLabel.textColor  = .systemRed
                 }
                 
