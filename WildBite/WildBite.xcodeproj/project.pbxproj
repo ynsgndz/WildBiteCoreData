@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8816335329BCE87300F03BEC /* MahalleAvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816335229BCE87300F03BEC /* MahalleAvViewController.swift */; };
+		882937B129BFC952005807D9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882937B029BFC952005807D9 /* Home.storyboard */; };
 		884F094A29BCB10700203DA9 /* AvSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */; };
 		884F094D29BCB14A00203DA9 /* ProfilSayfasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */; };
 		884F095129BCCA9E00203DA9 /* InsanAviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */; };
@@ -31,7 +32,6 @@
 		887DD26F29B8A3FB004AEC30 /* WildBiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD26E29B8A3FB004AEC30 /* WildBiteUITests.swift */; };
 		887DD27129B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887DD27029B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift */; };
 		88AE632529BBDB5000AF6955 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE632429BBDB5000AF6955 /* RegisterViewController.swift */; };
-		88AE632829BBE20000AF6955 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AE632729BBE20000AF6955 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		8816335229BCE87300F03BEC /* MahalleAvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahalleAvViewController.swift; sourceTree = "<group>"; };
+		882937B029BFC952005807D9 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		884F094929BCB10700203DA9 /* AvSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvSayfasiViewController.swift; sourceTree = "<group>"; };
 		884F094C29BCB14A00203DA9 /* ProfilSayfasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSayfasiViewController.swift; sourceTree = "<group>"; };
 		884F095029BCCA9E00203DA9 /* InsanAviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsanAviViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		887DD26E29B8A3FB004AEC30 /* WildBiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildBiteUITests.swift; sourceTree = "<group>"; };
 		887DD27029B8A3FB004AEC30 /* WildBiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildBiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88AE632429BBDB5000AF6955 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		88AE632729BBE20000AF6955 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +166,8 @@
 		8866932D29BC86F900E0BBEA /* GenelBakisHome */ = {
 			isa = PBXGroup;
 			children = (
+				884F094B29BCB13800203DA9 /* ProfilSayfasi */,
+				8898B1E129BFC75300F159DD /* Market */,
 				8866932E29BC871800E0BBEA /* GenelBakisHomeViewController.swift */,
 				884F094E29BCCA7500203DA9 /* YuksekSkor */,
 			);
@@ -206,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				88AE632629BBE1E400AF6955 /* Home */,
-				88938BCC29BBBFCA001C76E1 /* Main */,
+				88938BCC29BBBFCA001C76E1 /* LoginRegister */,
 				887DD25629B8A3FA004AEC30 /* Assets.xcassets */,
 				887DD25829B8A3FA004AEC30 /* LaunchScreen.storyboard */,
 				887DD24C29B8A3F8004AEC30 /* SceneDelegate.swift */,
@@ -234,14 +236,21 @@
 			path = WildBiteUITests;
 			sourceTree = "<group>";
 		};
-		88938BCC29BBBFCA001C76E1 /* Main */ = {
+		88938BCC29BBBFCA001C76E1 /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
 				887DD25029B8A3F8004AEC30 /* Main.storyboard */,
 				88AE632229BBDB3000AF6955 /* Login */,
 				88AE632329BBDB4100AF6955 /* Register */,
 			);
-			path = Main;
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		8898B1E129BFC75300F159DD /* Market */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Market;
 			sourceTree = "<group>";
 		};
 		88AE632229BBDB3000AF6955 /* Login */ = {
@@ -263,10 +272,9 @@
 		88AE632629BBE1E400AF6955 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				88AE632729BBE20000AF6955 /* Home.storyboard */,
-				884F094B29BCB13800203DA9 /* ProfilSayfasi */,
-				884F094829BCB0D600203DA9 /* AvSayfasi */,
 				8866932D29BC86F900E0BBEA /* GenelBakisHome */,
+				884F094829BCB0D600203DA9 /* AvSayfasi */,
+				882937B029BFC952005807D9 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -381,8 +389,8 @@
 				884F095929BCD30500203DA9 /* KasabaAv.storyboard in Resources */,
 				886C470D29BDB52300E4D05F /* YuksekSkor.storyboard in Resources */,
 				887DD25229B8A3F8004AEC30 /* Main.storyboard in Resources */,
-				88AE632829BBE20000AF6955 /* Home.storyboard in Resources */,
 				884F095D29BCD31300203DA9 /* MahalleAv.storyboard in Resources */,
+				882937B129BFC952005807D9 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

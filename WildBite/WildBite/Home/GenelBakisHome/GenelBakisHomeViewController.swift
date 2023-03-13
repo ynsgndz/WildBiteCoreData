@@ -59,7 +59,7 @@ class GenelBakisHomeViewController: UIViewController {
             print("Kişileri okuyamadı !")
             return
         }
-        var loginUserName = UserDefaults.standard.string(forKey: "GirisYapanKullanici")
+        let loginUserName = UserDefaults.standard.string(forKey: "GirisYapanKullanici")
        
         for i in userInfo {
             if(i.userName == loginUserName){

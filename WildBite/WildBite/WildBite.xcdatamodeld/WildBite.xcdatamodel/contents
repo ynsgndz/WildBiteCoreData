@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Market" representedClassName="Market" syncable="YES" codeGenerationType="class">
+        <attribute name="marketCizmeArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketCizmeGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketCizmeName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketCizmeParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketCizmeSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketEldivenArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketEldivenGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketEldivenName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketEldivenParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketEldivenSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketKaskArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketKaskGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketKaskName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketKaskParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketKaskSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketZirhArtisi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketZirhGuc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketZirhName" optional="YES" attributeType="String"/>
+        <attribute name="marketZirhParasi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="marketZirhSavunma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
         <attribute name="userCurrentHp" optional="YES" attributeType="Integer 32" defaultValueString="1000" usesScalarValueType="YES"/>
         <attribute name="userDef" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -7,6 +29,22 @@
         <attribute name="userEnergyMax" optional="YES" attributeType="Integer 32" defaultValueString="100" usesScalarValueType="YES"/>
         <attribute name="userExp" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES"/>
         <attribute name="userGold" optional="YES" attributeType="Integer 32" defaultValueString="100" usesScalarValueType="YES"/>
+        <attribute name="useritemCizmeArtisi" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemCizmeGuc" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemCizmeName" attributeType="String" defaultValueString="cizme1.png"/>
+        <attribute name="useritemCizmeSavunma" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemEldivenArtisi" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemEldivenGuc" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemEldivenName" attributeType="String" defaultValueString="eldiven1.png"/>
+        <attribute name="useritemEldivenSavunma" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemKaskArtisi" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemKaskGuc" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemKaskName" attributeType="String" defaultValueString="kask1.png"/>
+        <attribute name="useritemKaskSavunma" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemZirhArtisi" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemZirhGuc" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="useritemZirhName" attributeType="String" defaultValueString="zirh1.png"/>
+        <attribute name="useritemZirhSavunma" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="userLevel" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES"/>
         <attribute name="userMaxHp" optional="YES" attributeType="Integer 32" defaultValueString="1000" usesScalarValueType="YES"/>
         <attribute name="userName" optional="YES" attributeType="String"/>

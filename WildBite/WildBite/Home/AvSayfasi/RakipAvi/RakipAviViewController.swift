@@ -58,7 +58,7 @@ class RakipAviViewController: UIViewController {
         if(userInfo[randomNumber].userRace != myRage){
             myRakipTurAdiLabel.text = "\(String(describing: userInfo[randomNumber].userRace!)) \(String(describing: userInfo[randomNumber].userName!))"
             myRakipLevelLabel.text = "Level: \(userInfo[randomNumber].userLevel)"
-            var rakipHasarOrani = userInfo[randomNumber].userPow + userInfo[randomNumber].userMaxHp + userInfo[randomNumber].userDef
+            let rakipHasarOrani = userInfo[randomNumber].userPow + userInfo[randomNumber].userMaxHp + userInfo[randomNumber].userDef
             myRakipHasarOraniLabel.text = "Hasar Oranı: \(rakipHasarOrani)"
             myRakipGucLabel.text = "Güç: \(userInfo[randomNumber].userPow)"
             myRakipSavunmaLabel.text = "Savunma: \(userInfo[randomNumber].userDef)"
@@ -66,7 +66,7 @@ class RakipAviViewController: UIViewController {
             
             
             // savunma alani -
-        var savunanHasarOrani =  userInfo[randomNumber].userPow + userInfo[randomNumber].userMaxHp + userInfo[randomNumber].userDef
+            let savunanHasarOrani =  userInfo[randomNumber].userPow + userInfo[randomNumber].userMaxHp + userInfo[randomNumber].userDef
         
         UserDefaults.standard.set(userInfo[randomNumber].userName, forKey: "savunanUserName")
         UserDefaults.standard.set(savunanHasarOrani, forKey: "savunanHasarOrani")

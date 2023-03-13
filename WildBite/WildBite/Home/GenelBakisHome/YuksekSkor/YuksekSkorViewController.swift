@@ -52,7 +52,7 @@ class YuksekSkorViewController: UIViewController,UITableViewDataSource,UITableVi
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(userInfo[indexPath.row].userName)
+        print(userInfo[indexPath.row].userName as Any)
     }
 
 }
