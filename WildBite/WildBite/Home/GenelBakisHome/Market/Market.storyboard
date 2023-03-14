@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47" y="4"/>
+            <point key="canvasLocation" x="-482" y="-780"/>
         </scene>
         <!--Kask Market View Controller-->
         <scene sceneID="FYL-kg-Y1J">
@@ -258,13 +258,17 @@
                         <outlet property="myNavigationItem" destination="eR2-zp-Z7w" id="LlW-8I-UYJ"/>
                         <outlet property="myNavigationRightBaritem" destination="Sef-5R-DQ3" id="CkI-pQ-Gq0"/>
                         <outlet property="myTableView" destination="5g8-D6-eMd" id="akT-99-Hep"/>
+                        <segue destination="24n-Ce-zY9" kind="presentation" identifier="kaskToHome" modalPresentationStyle="fullScreen" id="1LR-lL-3IA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMo-OQ-Xru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927.48091603053433" y="-177.46478873239437"/>
+            <point key="canvasLocation" x="966" y="-107"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1LR-lL-3IA"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBrownColor">

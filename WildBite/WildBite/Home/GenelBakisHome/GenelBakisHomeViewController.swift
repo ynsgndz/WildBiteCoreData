@@ -22,7 +22,26 @@ class GenelBakisHomeViewController: UIViewController {
     @IBOutlet weak var myUserCanLabel: UILabel!
     @IBOutlet weak var myUserEnergyLabel: UILabel!
     @IBOutlet weak var myUserGoldLabel: UILabel!
-  // MARK: - Lifecycle
+
+    // envanter
+    
+
+    @IBOutlet weak var envanterKaskImageView: UIImageView!
+    
+    
+    @IBOutlet weak var envanterKaskName: UILabel!
+    
+    
+    @IBOutlet weak var envanterKaskArtisi: UILabel!
+    
+    
+    @IBOutlet weak var envanterKaskGucSavunma: UILabel!
+    
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +57,7 @@ class GenelBakisHomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("viewDidAppear sayfa goruntulendi")
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         print("viewWillDisappear: bu sayfadan cikildi baska sayfaya tiklandi yani")
@@ -64,16 +84,25 @@ class GenelBakisHomeViewController: UIViewController {
         for i in userInfo {
             if(i.userName == loginUserName){
                 print("Username : \(i.userName!)  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userMaxHp) Enerji : \(i.userEnergy)")
-                
+              
+                // profil
                 myUserGoldLabel.text = "💰Para: \(i.userGold) "
                 myUserEnergyLabel.text = "⚡️Enerji: \(i.userEnergy) "
                 myUserCanLabel.text = "❤️Can: \(i.userCurrentHp)"
-                myUserHasarLabel.text = "⚔️Hasar: \(i.userPow + i.userDef + i.userMaxHp)"
+                myUserHasarLabel.text = "⚔️Hasar: \(i.userPow + i.userDef + i.userMaxHp) + (\(i.useritemKaskGuc + i.useritemKaskSavunma + i.useritemZirhGuc + i.useritemZirhSavunma + i.useritemEldivenGuc + i.useritemEldivenSavunma + i.useritemCizmeGuc + i.useritemCizmeSavunma))"
                 myUserTurLabel.text = "Tür: \(String(describing: i.userRace!.uppercased()))"
                 myUserAdiLabel.text = "Adı: \(String(describing: i.userName!))"
                 myUserSeviyeLabel.text = "Seviye: \(i.userLevel)"
                 
                 myUserImageView.image = UIImage(named: "\(String(describing: i.userProfilResmi!))")
+                
+                // envanter
+                envanterKaskName.text = "\(String(describing: i.useritemKaskName!.replacingOccurrences(of: ".png", with: "")))"
+                envanterKaskArtisi.text = "(+\(i.useritemKaskArtisi))"
+                envanterKaskGucSavunma.text = "Güc: \(i.useritemKaskGuc) Savunma: \(i.useritemKaskSavunma)"
+                envanterKaskImageView.image = UIImage(named: i.useritemKaskName!)
+                    
+                
             }else {
                 print("uygulamadan cik la")
             }

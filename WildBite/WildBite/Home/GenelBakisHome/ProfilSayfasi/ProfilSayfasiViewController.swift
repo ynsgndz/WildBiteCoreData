@@ -85,12 +85,12 @@ class ProfilSayfasiViewController: UIViewController {
                 //tecrube
                 let tecrubeMax = i.userLevel * 100
                 let tecrubeCur = i.userExp % (tecrubeMax)
-                myTecrubeLabel.text = "🎖️ Tecrübe : \(tecrubeCur) / \(tecrubeMax) "
-                myToplamGucLabel.text = "💪 Güç : \(i.userPow) "
-                myToplamSavunmaLabel.text = "🛡️ Savunma : \(i.userDef) "
+                myTecrubeLabel.text = "🎖️ Tecrübe : \(tecrubeCur) / \(tecrubeMax) \n \n 💰Şuanki Paran: \(i.userGold)"
+                myToplamGucLabel.text = "💪 Güç : \(i.userPow) + (\(i.useritemKaskGuc + i.useritemZirhGuc  + i.useritemEldivenGuc  + i.useritemCizmeGuc))"
+                myToplamSavunmaLabel.text = "🛡️ Savunma : \(i.userDef) + (\(i.useritemKaskSavunma + i.useritemZirhSavunma +  i.useritemEldivenSavunma + i.useritemCizmeSavunma))"
              
-                myGucArttirGoldLabel.text = "(\(i.userGold) / \(userSaldiriOrani)) Altın"
-                mySavunmaArttirGoldLabel.text = "(\(i.userGold) / \(userSaldiriOrani)) Altın"
+                myGucArttirGoldLabel.text = "(\(i.userGold) / \(userSaldiriOrani)) 💰"
+                mySavunmaArttirGoldLabel.text = "(\(i.userGold) / \(userSaldiriOrani)) 💰"
                 
                 
                 if(i.userGold >= userSaldiriOrani){
