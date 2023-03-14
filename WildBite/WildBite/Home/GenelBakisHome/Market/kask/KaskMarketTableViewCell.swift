@@ -9,7 +9,17 @@ import UIKit
 
 class KaskMarketTableViewCell: UITableViewCell{
 
+    @IBOutlet weak var myKaskArtisiLabel: UILabel!
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myKaskImageView: UIImageView!
+    @IBOutlet weak var myGucLabel: UILabel!
+    @IBOutlet weak var mySavunmaLabel: UILabel!
+    @IBOutlet weak var myFiyatLabel: UILabel!
+    @IBOutlet weak var myGerekliSeviyeLAbel: UILabel!
+    
+    @IBOutlet weak var satinAlmaLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        
@@ -21,4 +31,5 @@ class KaskMarketTableViewCell: UITableViewCell{
         // Configure the view for the selected state
     }
 
+     
 }

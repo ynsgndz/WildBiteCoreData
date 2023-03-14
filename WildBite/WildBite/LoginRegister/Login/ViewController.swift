@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     let myContext = appDelegate.persistentContainer.viewContext
     var userInfo = [Users]()
+    var merketInfo = [Market]()
    
     
     @IBOutlet weak var myUserNameTextField: UITextField!
@@ -79,11 +80,28 @@ class ViewController: UIViewController {
                
                     myContext.delete(i)
                     appDelegate.saveContext()
-                
+                print("kisiler silindi !")
+               
                 
             }
             
-           
+            if(myUserNameTextField.text == "delyapmarket"){
+               
+                   
+                do {
+                    merketInfo = try myContext.fetch(Market.fetchRequest())
+                    for m in self.merketInfo{
+                        myContext.delete(m)
+                        appDelegate.saveContext()
+                        print("market silindi !")
+                    }
+                    
+                }catch{
+                    print("market okuyamadı !")
+                }
+                
+            }
+            
                 if(myUserNameTextField.text == "fullyap"){
                     if(i.userName != "admin"){
                         if(i.userCurrentHp < 500){

@@ -7,58 +7,103 @@
 import UIKit
 import CoreData
 
-let appMarketDelegate = UIApplication.shared.delegate as! AppDelegate
+let myMarketKaskAppDellegate = UIApplication.shared.delegate as! AppDelegate
 class KaskMarketViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    let myContext = appMarketDelegate.persistentContainer.viewContext
-    var marketInfo = [Market]()
-   
+    let myContext = myMarketKaskAppDellegate.persistentContainer.viewContext
+   var marketInfo = [Market]()
+    var userInfo = [Users]()
+    var gosterilenKaskSayisi = 0
+    var userLevel = 0
+    var userGoldu = 0
+    let loginUserName = UserDefaults.standard.string(forKey: "GirisYapanKullanici")
     @IBOutlet weak var myTableView: UITableView!
+    
+    @IBOutlet weak var myNavigationBar: UINavigationBar!
+    
+    
+    @IBOutlet weak var myNavigationRightBaritem: UIBarButtonItem!
+    
+    @IBOutlet weak var myNavigationItem: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Debug: MarketViewController viewDidLoad run  ")
-        for i in marketInfo{
-            print("kask name \( String(describing: i.marketKaskName))")
+        do{
+            marketInfo = try myContext.fetch(Market.fetchRequest())
+            userInfo = try myContext.fetch(Users.fetchRequest())
+            myTableView.delegate = self
+            myTableView.dataSource = self
+            print("Debug: MarketViewController viewDidLoad Market.fetchRequest run ")
+        }catch{
+            print("Debug: MarketViewController viewDidLoad Market.fetchRequest not run ")
+            return
         }
+       
      }
     
     
     override func viewWillAppear(_ animated: Bool) {
         print("Debug: MarketViewController viewWillAppear run  ")
-        veriOkuma()
+        for i in userInfo{
+            if(i.userName == loginUserName){
+                gosterilenKaskSayisi = Int(i.userLevel)
+                userLevel = Int(i.userLevel)
+                userGoldu = Int(i.userGold)
+                myNavigationRightBaritem.title = "💰PARA: \(i.userGold)"
+            }
+        }
+        for i in marketInfo{
+            print("Kask adlari \(String(describing: i.marketKaskName))")
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         print("Debug: MarketViewController viewDidAppear run  ")
+       
     }
-    func veriOkuma(){
-        do{
-            marketInfo = try myContext.fetch(Market.fetchRequest())
-            
-           
-           
-          myTableView.dataSource = self
-            myTableView.delegate = self
-            myTableView.reloadData()
-        }catch{
-            print("Debug: MarketViewController market tablosu okunamadi")
-        }
-    }
+   
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("Debug: MarketViewController market  tablosu marketInfo.count \(marketInfo.count)")
-        return marketInfo.count
+       
+        //return gosterilenKaskSayisi
+        return 27
+      
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! KaskMarketTableViewCell
-        
+        if(marketInfo[indexPath.row].marketKaskName != nil){
+            cell.myLabel.text = "\(marketInfo[indexPath.row].marketKaskName!.replacingOccurrences(of: ".png", with: ""))"
+            cell.myKaskImageView.image = UIImage(named: marketInfo[indexPath.row].marketKaskName!)
+            cell.myGucLabel.text = "Güç: \(marketInfo[indexPath.row].marketKaskGuc)"
+            cell.mySavunmaLabel.text = "Savunma: \(marketInfo[indexPath.row].marketKaskSavunma)"
+            cell.myFiyatLabel.text = "Fiyat: \(marketInfo[indexPath.row].marketKaskParasi)"
+            cell.myKaskArtisiLabel.text = "(+\(marketInfo[indexPath.row].marketKaskArtisi))"
+            cell.myGerekliSeviyeLAbel.text = "Gerekli Seviye: \(marketInfo[indexPath.row].marketKaskLeveli)"
+            if(userLevel >= marketInfo[indexPath.row].marketKaskLeveli && userGoldu >= marketInfo[indexPath.row].marketKaskParasi ){
+                cell.satinAlmaLabel.text = "SATIN AL"
+                
+                cell.satinAlmaLabel.textColor = .systemGreen
+                print("user level \(userLevel)")
+                print("kask level \(marketInfo[indexPath.row].marketKaskLeveli)")
+            }else{
+             
+                cell.satinAlmaLabel.text = "SATIN AL"
+                
+                cell.satinAlmaLabel.textColor = .systemGray
+                print("userNot level \(userLevel)")
+                print("kaskNot level \(marketInfo[indexPath.row].marketKaskLeveli)")
+               
+            }
+        }
        
+      
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // print(userInfo[indexPath.row].userName as Any)
+        print(marketInfo[indexPath.row].marketKaskName as Any)
     }
 
 }
