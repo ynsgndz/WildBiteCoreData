@@ -99,7 +99,7 @@ class KaskMarketViewController: UIViewController,UITableViewDataSource,UITableVi
                 print("kaskNot level \(marketInfo[indexPath.row].marketKaskLeveli)")
                 
             }
-            var satirdakiKaskAdi = marketInfo[indexPath.row].marketKaskName!.replacingOccurrences(of: ".png", with: "")
+            let satirdakiKaskAdi = marketInfo[indexPath.row].marketKaskName!.replacingOccurrences(of: ".png", with: "")
             if(satinAlinmisKask == satirdakiKaskAdi){
                
                 cell.satinAlmaLabel.text = ""
@@ -147,7 +147,7 @@ class KaskMarketViewController: UIViewController,UITableViewDataSource,UITableVi
         }
         
         alert.addAction(hayirButonu)
-        var satinAlinmaSirasindaKaskAdi = marketInfo[indexPath.row].marketKaskName!.replacingOccurrences(of: ".png", with: "")
+        let satinAlinmaSirasindaKaskAdi = marketInfo[indexPath.row].marketKaskName!.replacingOccurrences(of: ".png", with: "")
         
         if(userLevel >= marketInfo[indexPath.row].marketKaskLeveli && userGoldu >= marketInfo[indexPath.row].marketKaskParasi  && satinAlinmisKask !=  satinAlinmaSirasindaKaskAdi ){
             present(alert,animated: true, completion: nil)

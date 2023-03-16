@@ -86,9 +86,9 @@ class GenelBakisHomeViewController: UIViewController {
                 print("Username : \(i.userName!)  Level : \(i.userLevel)  Exp : \(i.userExp) Tür : \(String(describing: i.userRace!)) Güç : \(i.userPow) Defans : \(i.userDef) Altin : \(i.userGold) Hp : \(i.userMaxHp) Enerji : \(i.userEnergy)")
               
                 // profil
-                myUserGoldLabel.text = "💰Para: \(i.userGold) "
-                myUserEnergyLabel.text = "⚡️Enerji: \(i.userEnergy) "
-                myUserCanLabel.text = "❤️Can: \(i.userCurrentHp)"
+                myUserGoldLabel.text = "Para: \(i.userGold) "
+                myUserEnergyLabel.text = "Enerji: \(i.userEnergy) "
+                myUserCanLabel.text = "Can: \(i.userCurrentHp)"
                 myUserHasarLabel.text = "⚔️Hasar: \(i.userPow + i.userDef + i.userMaxHp) + (\(i.useritemKaskGuc + i.useritemKaskSavunma + i.useritemZirhGuc + i.useritemZirhSavunma + i.useritemEldivenGuc + i.useritemEldivenSavunma + i.useritemCizmeGuc + i.useritemCizmeSavunma))"
                 myUserTurLabel.text = "Tür: \(String(describing: i.userRace!.uppercased()))"
                 myUserAdiLabel.text = "Adı: \(String(describing: i.userName!))"
